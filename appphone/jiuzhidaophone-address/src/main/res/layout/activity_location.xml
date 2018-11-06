@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.amap.api.maps2d.MapView
+        android:id="@+id/mMapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#3A3B4C">
+
+    </com.amap.api.maps2d.MapView>
+
+
+    <Button
+        android:id="@+id/btn_amp_address"
+        android:layout_width="@dimen/x70"
+        android:layout_height="@dimen/x70"
+        android:layout_above="@+id/ll_address"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/x25"
+        android:layout_marginLeft="@dimen/x25"
+        android:layout_marginRight="@dimen/x25"
+        android:background="@mipmap/address_flush" />
+
+    <LinearLayout
+        android:background="@color/white"
+        android:id="@+id/ll_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bt_ok"
+        android:layout_marginLeft="@dimen/x25"
+        android:layout_marginRight="@dimen/x25"
+        android:divider="@drawable/devider_line"
+        android:dividerPadding="@dimen/x25"
+        android:showDividers="middle"
+        android:orientation="vertical">
+
+        <LinearLayout style="@style/crate_parent_ll">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/tv_location_address"
+                style="@style/create_text"
+                android:text="地址" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/crate_parent_ll">
+
+            <EditText
+                android:id="@+id/et_location_address"
+                style="@style/create_editext"
+                android:layout_marginLeft="@dimen/x1"
+                android:hint="详细地址" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/x25"
+        android:layout_marginLeft="@dimen/x25"
+        android:layout_marginRight="@dimen/x25"
+        android:layout_marginTop="@dimen/x25"
+        android:background="@drawable/address_save"
+        android:text="确定"
+        android:textColor="@color/selector_splash_txt"
+        android:textSize="16sp" />
+
+    <include layout="@layout/address_top_layout"></include>
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.haier.uplus.control" >
+<application>
+    <activity
+        android:name=".activity.GuideActivity"
+        android:screenOrientation="portrait">
+        <intent-filter>
+            <action android:name="hs.act.phone.GuideActivity" />
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+    </activity>
+    <activity
+        android:name=".activity.LinkWifiActivity"
+        android:screenOrientation="portrait">
+        <intent-filter>
+            <action android:name="hs.act.phone.LinkWifiActivity" />
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+    </activity>
+    <activity
+        android:name=".activity.LinkSuccessActivity"
+        android:screenOrientation="portrait">
+        <intent-filter>
+            <action android:name="hs.act.phone.LinkSuccessActivity" />
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+    </activity>
+    <activity
+        android:name=".activity.WineManageActivity"
+        android:screenOrientation="portrait">
+        <intent-filter>
+            <action android:name="hs.act.phone.WineManageActivity" />
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+    </activity>
+    <activity
+        android:name=".activity.VirtualCellaretteActivity"
+        android:screenOrientation="portrait">
+        <intent-filter>
+            <action android:name="hs.act.phone.VirtualCellaretteActivity" />
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+    </activity>
+</application>
+</manifest>
+

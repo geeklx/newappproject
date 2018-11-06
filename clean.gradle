@@ -1,0 +1,75 @@
+/**
+ * author: qibin
+ *
+ * command: gradlew cl
+ *
+ * auto remove the build dir
+ */
+import java.util.concurrent.CountDownLatch
+import java.util.concurrent.Executors
+
+apply from: './setting_parser.gradle'
+
+ext {
+    CLEAN_MAX_THREAD_COUNT = 20
+}
+
+//clean build dir
+tasks.create(name: 'cl') << {
+    def root = file("./")
+
+    def collector = new Collector()
+    root.eachFile { item -> collect(item, collector) }
+
+    def threadCount = collector.size() > CLEAN_MAX_THREAD_COUNT ? CLEAN_MAX_THREAD_COUNT : collector.size()
+
+    println "collect ${collector.size()} modules and will open ${threadCount} threads to remove"
+
+    def countDownLatch = new CountDownLatch(collector.size())
+    def executor = Executors.newFixedThreadPool(threadCount)
+
+    collector.paths.each { item ->
+        executor.execute {
+            println "begin remove ${item}"
+            delete(item)
+
+            countDownLatch.countDown()
+            println "success remove ${item}"
+        }
+    }
+
+    countDownLatch.await()
+
+    println "clean success..."
+}
+
+def collect(File f, Collector collector) {
+    if (f.isDirectory()) {
+        if (isModuleBuildExists(f.absolutePath)) {
+            if (isProjectOpen(f.absolutePath)) {
+                collector.paths.add("${f.absolutePath}/build")
+//                println "remove ${f.absolutePath}/build"
+//                delete("${f.absolutePath}/build")
+            }
+            return
+        }
+
+        f.eachFile { item -> collect(item, collector) }
+    }
+}
+
+def isModuleBuildExists(String name) {
+    return file("${name}/build").exists()
+}
+
+class Collector {
+    List<String> paths
+
+    Collector() {
+        paths = new ArrayList<>()
+    }
+
+    def size() {
+        return paths.size()
+    }
+}

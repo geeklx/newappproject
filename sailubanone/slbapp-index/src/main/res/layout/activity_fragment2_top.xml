@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="@color/color_11B5AF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/tv_center"
+            style="@style/logintop"
+            android:text="手机影像" />
+
+        <TextView
+            android:id="@+id/tv_right"
+            android:layout_width="@dimen/x40"
+            android:layout_height="@dimen/x40"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/fragment2_edit"
+            android:visibility="gone"
+            tools:visibility="visible" />
+    </RelativeLayout>
+
+</RelativeLayout>

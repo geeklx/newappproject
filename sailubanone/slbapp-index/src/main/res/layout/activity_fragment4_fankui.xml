@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_EDEBE9"
+    android:fitsSystemWindows="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/lltop"
+        layout="@layout/activity_commtop" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/llcontent1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/x20"
+            android:background="@drawable/btn_cancle"
+            android:orientation="vertical"
+            android:padding="@dimen/x20">
+
+            <EditText
+                android:id="@+id/edt1"
+                style="@style/logincontentedit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|top"
+                android:hint="请描述你的问题或意见"
+                android:inputType="textMultiLine"
+                android:lines="10"
+                android:scrollbars="vertical"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/tv_ed_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="10dp"
+                android:text="还能输入100字"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text_size_12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llcontent1"
+            android:layout_margin="10dp"
+            android:background="@drawable/btn_cancle"
+            android:orientation="vertical"
+            android:padding="@dimen/x10">
+
+            <EditText
+                android:id="@+id/edt2"
+                style="@style/logincontentedit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="常用联系方式(电话，QQ，邮箱等，以便及时回复)"
+                android:padding="10dp"
+                android:textSize="@dimen/text_size_14" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:paddingBottom="20dp">
+
+        <Button
+            android:id="@+id/btn_sure"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y100"
+            android:layout_margin="@dimen/x40"
+            android:background="@drawable/slb_my_btn_sure"
+            android:text="发送"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/text_size_16" />
+    </LinearLayout>
+</LinearLayout>

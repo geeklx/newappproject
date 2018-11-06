@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/transparent_half_half_half">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:divider="@drawable/devider_line"
+        android:dividerPadding="@dimen/x32"
+        android:orientation="vertical"
+        android:paddingTop="12dp"
+        android:showDividers="middle">
+
+        <Button
+            android:id="@+id/btWx"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="微信支付" />
+
+        <Button
+            android:id="@+id/btAlipay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="支付宝支付" />
+
+        <Button
+            android:id="@+id/btYl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="银联支付" />
+    </LinearLayout>
+
+</RelativeLayout>
+

@@ -1,0 +1,15 @@
+/**
+ * author: geek
+ *
+ * auto *MOVE* your aar file in module/module to biz-libs/
+ */
+assemble << {
+    def files = file("./build/outputs/aar/").listFiles()
+    def targetDir = "../../biz-libs/"
+    files.each { item ->
+        def target = file(targetDir + item.getName())
+
+        if (target.exists()) { target.delete()}
+        item.renameTo(target)
+    }
+}

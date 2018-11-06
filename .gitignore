@@ -1,0 +1,15 @@
+*.iml
+.gradle
+/local.properties
+/.idea
+/.idea/caches
+/.idea/libraries
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/workspace.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+/jiaozivideoplayer/build
+/libgreendao/build

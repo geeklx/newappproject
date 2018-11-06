@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name" translatable="false">slbapp-index</string>
+    <string name="slb_my_tip1" translatable="false">开启硬解码</string>
+    <string name="slb_my_tip2" translatable="false">开启硬解码能让视频更加流畅</string>
+    <string name="slb_my_tip3" translatable="false">清除缓存</string>
+    <string name="slb_my_tip4" translatable="false">清除缩略图及其他缓存文件</string>
+    <string name="slb_my_tip5" translatable="false">重力感应</string>
+    <string name="slb_my_tip6" translatable="false">语言视频画面会随着重力感应而变化</string>
+    <string name="slb_my_tip7" translatable="false">应用自动弹出</string>
+    <string name="slb_my_tip8" translatable="false">手机解屏后，应用进程还在的情况下会自动弹出</string>
+
+</resources>

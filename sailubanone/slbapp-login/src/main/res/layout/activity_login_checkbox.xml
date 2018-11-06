@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y100">
+
+    <LinearLayout
+        android:id="@+id/ll_left"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/x60"
+        android:orientation="horizontal">
+
+        <com.haier.cellarette.baselibrary.widget.LxLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.haier.cellarette.baselibrary.widget.SmoothCheckBox
+                android:id="@+id/scb_left"
+                android:layout_width="@dimen/x32"
+                android:layout_height="@dimen/x32"
+                android:layout_marginRight="@dimen/x10"
+                app:color_checked="@color/color_ff11B5AF"
+                app:stroke_width="1dp" />
+
+            <TextView
+                style="@style/logincommtextview"
+                android:text="记住密码"
+                android:textSize="@dimen/text_size_12" />
+
+        </com.haier.cellarette.baselibrary.widget.LxLinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/x60"
+        android:orientation="horizontal">
+
+        <com.haier.cellarette.baselibrary.widget.LxLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.haier.cellarette.baselibrary.widget.SmoothCheckBox
+                android:id="@+id/scb_right"
+                android:layout_width="@dimen/x36"
+                android:layout_height="@dimen/x36"
+                android:layout_marginRight="@dimen/x10"
+                app:color_checked="@color/color_ff11B5AF"
+                app:stroke_width="1dp" />
+
+            <TextView
+                style="@style/logincommtextview"
+                android:text="自动登录"
+                android:textSize="@dimen/text_size_12" />
+        </com.haier.cellarette.baselibrary.widget.LxLinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+
+

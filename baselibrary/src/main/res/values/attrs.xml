@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="EmptyView">
+        <attr name="loading_layout_img_an" format="integer|reference" />
+        <attr name="loading_layout" format="reference" />
+        <attr name="nodata_layout" format="reference" />
+        <attr name="errornet_layout" format="reference" />
+        <attr name="unreachable_layout" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="IndexPagerIndicator">
+        <attr name="indicator_width" format="dimension|reference" />
+        <attr name="indicator_height" format="dimension|reference" />
+        <attr name="indicator_interval" format="dimension|reference" />
+        <attr name="indicator_item_color" format="color|reference" />
+        <attr name="indicator_select_color" format="color|reference" />
+        <attr name="indicator_select_height" format="dimension|reference" />
+        <attr name="indicator_style_drawer" format="string|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="BannerView">
+        <attr name="indicator_position" format="enum">
+            <enum name="left" value="0" />
+            <enum name="center" value="1" />
+        </attr>
+        <attr name="indicator_visible" format="boolean" />
+        <attr name="scroll_time" format="integer|reference" />
+        <attr name="auto_start" format="boolean|reference" />
+
+        <attr name="indicator_normal_color" format="color|reference" />
+        <attr name="indicator_current_color" format="color|reference" />
+
+        <attr name="indicator_current_style" format="enum">
+            <enum name="normal" value="0" />
+            <enum name="large" value="1" />
+        </attr>
+
+        <attr name="indicator_current_size" format="integer|reference" />
+        <attr name="indicator_circle_radius" format="integer|reference" />
+        <attr name="indicator_padding" format="integer|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="SmartBar">
+        <attr name="home_icon" format="reference" />
+        <attr name="back_icon" format="reference" />
+        <attr name="icon_padding" format="dimension|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="LXBannerView">
+        <attr name="open_mz_mode" format="boolean" />
+        <attr name="outside_bottom" format="boolean" />
+        <attr name="canLoop" format="boolean" />
+        <attr name="indicatorPaddingLeft" format="dimension" />
+        <attr name="indicatorPaddingRight" format="dimension" />
+        <attr name="indicatorPaddingTop" format="dimension" />
+        <attr name="indicatorPaddingBottom" format="dimension" />
+        <attr name="indicatorAlign">
+            <enum name="left" value="0" />
+            <enum name="center" value="1" />
+            <enum name="right" value="2" />
+        </attr>
+        <attr name="middle_page_cover" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="TagFlowLayout">
+        <attr name="max_select" format="integer"></attr>
+        <attr name="tag_gravity">
+            <enum name="left" value="-1" />
+            <enum name="center" value="0" />
+            <enum name="right" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="SimpleTagImageView">
+        <attr name="simple_corner_distance" format="dimension" />
+        <attr name="simple_tag_width" format="dimension" />
+        <attr name="simple_tag_background_color" format="color" />
+        <attr name="simple_tag_text" format="string" />
+        <attr name="simple_tag_textSize" format="dimension" />
+        <attr name="simple_tag_textColor" format="color" />
+        <attr name="simple_tag_orientation" format="enum">
+            <enum name="left_top" value="0" />
+            <enum name="right_top" value="1" />
+            <enum name="left_bottom" value="2" />
+            <enum name="right_bottom" value="3" />
+        </attr>
+        <attr name="simple_tag_enable" format="boolean" />
+        <attr name="simple_tag_round_radius" format="dimension" />
+    </declare-styleable>
+
+    <!--圆形图片自定义View-->
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <!-- {@deprecated Use civ_circlebackground_color instead.} -->
+        <attr name="civ_fill_color" format="color" />
+        <attr name="civ_circle_background_color" format="color" />
+    </declare-styleable>
+
+    <attr name="borderRadius" format="dimension" />
+    <attr name="type">
+        <enum name="circle" value="0" />
+        <enum name="round" value="1" />
+    </attr>
+    <attr name="src" format="reference"></attr>
+
+    <declare-styleable name="CustomImageView">
+        <attr name="borderRadius" />
+        <attr name="type" />
+        <attr name="src" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundImageViewStyle">
+        <attr name="riv_border_color" format="color"/>
+        <attr name="riv_border_width" format="dimension"/>
+        <attr name="riv_pressed_border_color" format="color"/>
+        <attr name="riv_pressed_border_width" format="dimension"/>
+        <attr name="riv_pressed_mask_color" format="color"/>
+        <attr name="riv_pressed_mode_enabled" format="boolean"/>
+        <attr name="riv_is_circle" format="boolean"/>
+        <attr name="riv_corner_radius" format="dimension"/>
+    </declare-styleable>
+
+    <!--SwitchButton开关按钮自定义View-->
+    <declare-styleable name="SwitchButton">
+        <attr name="sb_shadow_radius" format="reference|dimension" />
+        <attr name="sb_shadow_offset" format="reference|dimension" />
+        <attr name="sb_shadow_color" format="reference|color" />
+        <attr name="sb_uncheck_color" format="reference|color" />
+        <attr name="sb_checked_color" format="reference|color" />
+
+        <attr name="sb_border_width" format="reference|dimension" />
+        <attr name="sb_checkline_color" format="reference|color" />
+        <attr name="sb_checkline_width" format="reference|dimension" />
+        <attr name="sb_uncheckcircle_color" format="reference|color" />
+        <attr name="sb_uncheckcircle_width" format="reference|dimension" />
+        <attr name="sb_uncheckcircle_radius" format="reference|dimension" />
+
+        <attr name="sb_checked" format="reference|boolean" />
+        <attr name="sb_shadow_effect" format="reference|boolean" />
+        <attr name="sb_effect_duration" format="reference|integer" />
+        <attr name="sb_button_color" format="reference|color" />
+        <attr name="sb_show_indicator" format="reference|boolean" />
+        <attr name="sb_background" format="reference|color" />
+        <attr name="sb_enable_effect" format="reference|boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="AlphaView">
+        <attr name="pointvisbile">
+            <enum name="visible" value="0" />
+            <enum name="gone" value="8" />
+        </attr>
+
+        <attr name="pointgravity">
+            <enum name="left" value="8" />
+            <enum name="right" value="5" />
+            <enum name="center" value="17" />
+            <enum name="center_horizontal" value="1" />
+            <enum name="center_vertical" value="16" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="LikeButton">
+        <attr name="icon_type" format="string" />
+        <attr name="icon_size" format="dimension|reference" />
+        <attr name="like_drawable" format="reference" />
+        <attr name="unlike_drawable" format="reference" />
+        <attr name="dots_primary_color" format="color|reference" />
+        <attr name="dots_secondary_color" format="color|reference" />
+        <attr name="circle_start_color" format="color|reference" />
+        <attr name="circle_end_color" format="color|reference" />
+        <attr name="liked" format="boolean" />
+        <attr name="is_enabled" format="boolean" />
+        <attr name="anim_scale_factor" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="SmoothCheckBox">
+        <attr name="duration" format="integer" />
+        <attr name="stroke_width" format="dimension" />
+        <attr name="color_tick" format="color" />
+        <attr name="color_checked" format="color" />
+        <attr name="color_unchecked" format="color" />
+        <attr name="color_unchecked_stroke" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="DiscreteScrollView">
+        <attr name="dsv_orientation" format="enum">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="AutofitTextView">
+        <!-- Minimum size of the text. -->
+        <attr name="minTextSize" format="dimension" />
+        <!-- Amount of precision used to calculate the correct text size to fit within its
+        bounds. Lower precision is more precise and takes more time. -->
+        <attr name="precision" format="float" />
+        <!-- Defines whether to automatically resize text to fit to the view's bounds. -->
+        <attr name="sizeToFit" format="boolean" />
+    </declare-styleable>
+
+</resources>

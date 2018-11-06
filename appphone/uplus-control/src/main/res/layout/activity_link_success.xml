@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF" >
+
+    <include
+        android:id="@+id/ly_top"
+        layout="@layout/top_layout"/>
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textColor="#5a5a5a"
+        android:layout_below="@+id/ly_top"
+        android:gravity="center_horizontal"
+        android:text="@string/link_wifi_success"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/gutai_success"
+        android:layout_width="180dp"
+        android:layout_height="300dp"
+        android:layout_below="@+id/textview1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/jc66_bind_succ" />
+
+    <Button
+        android:id="@+id/btn_sucess"
+        android:layout_width="237dp"
+        android:layout_height="38dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/btn_color"
+        android:text="查看设备"
+        android:textColor="@color/color_white"
+        android:textSize="16sp" />
+
+
+</RelativeLayout>

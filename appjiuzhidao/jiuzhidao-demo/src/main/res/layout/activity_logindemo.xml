@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@drawable/login_background"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp">
+
+        <EditText
+            android:maxLength="11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入电话号码"
+            android:inputType="number" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:layout_marginTop="30dp">
+
+            <EditText
+                android:maxLength="6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入验证码"
+                android:inputType="number" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="30dp"
+            android:text="获取验证码" />
+    </FrameLayout>
+
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="登录" />
+
+
+</LinearLayout>

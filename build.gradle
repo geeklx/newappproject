@@ -1,0 +1,51 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+apply from: "buildconfig.gradle"
+apply from: './publish.gradle'
+apply from: './clean.gradle'
+
+buildscript {
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+//        maven {
+//            url "http://mvn.mob.com/android"
+//        }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.2.1'
+//        //greendao
+//        classpath 'org.greenrobot:greendao-gradle-plugin:3.2.0'
+//        // 注册MobSDK
+//        classpath "com.mob.sdk:MobSDK:+"
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        maven {
+            url "https://maven.google.com"
+        }
+//        maven {
+//            url "http://mvn.mob.com/android"
+//        }
+        google()
+        jcenter()
+        maven { url "https://jitpack.io" }
+
+        flatDir {
+            dirs project(':libsCenter').file('./')
+            dirs project(':biz-libs').file('./')
+        }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '4.6'
+}

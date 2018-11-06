@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="QQ" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="微信" />
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="新浪微博" />
+
+</LinearLayout>

@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fadeScrollbars="false"
+    android:scrollbarSize="10dp"
+    android:scrollbarThumbVertical="@color/red"
+    android:scrollbarTrackVertical="@color/gray222328">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="glidenetpicpressnormal" />
+
+            <ImageView
+                android:id="@+id/iv_glidenetpicpressnormal"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/starter"
+                android:scaleType="centerCrop"
+                android:text="fragment_content3"
+                android:textColor="@color/orange_red"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="recycleviewgallery" />
+
+            <TextView
+                android:id="@+id/tv_recycleviewgallery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="30dp"
+                android:text="act-recycleviewgallery" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="likebutton" />
+
+            <TextView
+                android:id="@+id/tv_likebutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="30dp"
+                android:text="act-likebutton" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="networkview" />
+
+            <TextView
+                android:id="@+id/tv_networkview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="30dp"
+                android:text="act-networkview" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="handler" />
+
+            <TextView
+                android:id="@+id/tv_handler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="30dp"
+                android:text="act-handler" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="recycleview" />
+
+            <TextView
+                android:id="@+id/tv_recycleview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="30dp"
+                android:text="act-recycleview" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="greendao" />
+
+            <TextView
+                android:id="@+id/tv_greendao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="30dp"
+                android:text="act-greendao" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="zuniscrollview" />
+
+            <TextView
+                android:id="@+id/tv_zuniscrollview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="30dp"
+                android:text="act-zuniscrollview" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="usersdk" />
+
+            <TextView
+                android:id="@+id/tv_usersdk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="30dp"
+                android:text="act-usersdk" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hios" />
+
+            <TextView
+                android:id="@+id/tv_hios"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="30dp"
+                android:text="act-hios" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="caranim" />
+
+            <TextView
+                android:id="@+id/tv_caranim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="30dp"
+                android:text="act-caranim" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="recycleviewalluses" />
+
+            <TextView
+                android:id="@+id/tv_recycleviewalluses"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="30dp"
+                android:text="act-recycleviewalluses" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="changelanguage" />
+
+            <TextView
+                android:id="@+id/tv_changelanguage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="30dp"
+                android:text="act-changelanguage" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ScrollViewAct" />
+
+            <TextView
+                android:id="@+id/tv_scrollviewact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="30dp"
+                android:text="act-ScrollViewAct" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Anroomcrash" />
+
+            <TextView
+                android:id="@+id/tv_anroomcrash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="30dp"
+                android:text="act-ANROOMCrash" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MusicActivity" />
+
+            <TextView
+                android:id="@+id/tv_MusicActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="30dp"
+                android:text="act-MusicActivity" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="uploadpic" />
+
+            <TextView
+                android:id="@+id/tv_uploadpic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="30dp"
+                android:text="act-uploadpic" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="expandableview" />
+
+            <TextView
+                android:id="@+id/tv_expandableview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="30dp"
+                android:text="act-expandableview" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AssetsMainActivity" />
+
+            <TextView
+                android:id="@+id/tv_assetsMainActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="30dp"
+                android:text="act-AssetsMainActivity" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="购物车" />
+
+            <TextView
+                android:id="@+id/tv_shoppingcar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="30dp"
+                android:text="act-ShoppingcarActivity" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv1_demo1"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/demo1"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+</ScrollView>

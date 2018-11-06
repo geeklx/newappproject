@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/ly_top"
+        layout="@layout/top_layout" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.haier.cellarette.baselibrary.zuni.ZuniScrollView
+            android:id="@+id/scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y53"
+                    android:background="#EDEBE9">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/x28"
+                        android:paddingRight="@dimen/x28"
+                        android:text="通知"
+                        android:textColor="#888580"
+                        android:textSize="@dimen/text_size_12" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y106">
+
+                    <TextView
+                        android:id="@+id/tv_msg_notice"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/on_touch_bg"
+                        android:clickable="true"
+                        android:drawablePadding="@dimen/x20"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/x28"
+                        android:paddingRight="@dimen/x28"
+                        android:text="@string/settings_msg_notice_tx"
+                        android:textColor="@color/ff383837"
+                        android:textSize="@dimen/text_size_16" />
+
+                    <com.haier.cellarette.baselibrary.widget.SwitchButton
+                        android:id="@+id/sb_msg_notice"
+                        android:layout_width="@dimen/x95"
+                        android:layout_height="@dimen/y68"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/x28"
+                        app:sb_checked="true"
+                        app:sb_show_indicator="false" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="@dimen/x28"
+                        android:layout_marginRight="@dimen/x28"
+                        android:background="#DCDCDC" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y106">
+
+                    <TextView
+                        android:id="@+id/tv_open_notice"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/on_touch_bg"
+                        android:clickable="true"
+                        android:drawablePadding="@dimen/x20"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/x28"
+                        android:paddingRight="@dimen/x28"
+                        android:text="@string/settings_open_notice_tx"
+                        android:textColor="@color/ff383837"
+                        android:textSize="@dimen/text_size_16" />
+
+                    <com.haier.cellarette.baselibrary.widget.SwitchButton
+                        android:id="@+id/sb_open_notice"
+                        android:layout_width="@dimen/x95"
+                        android:layout_height="@dimen/y68"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/x28"
+                        app:sb_checked="true"
+                        app:sb_show_indicator="false" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="@dimen/x28"
+                        android:layout_marginRight="@dimen/x28"
+                        android:background="#DCDCDC" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y106">
+
+                    <TextView
+                        android:id="@+id/tv_trouble_notice"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/on_touch_bg"
+                        android:clickable="true"
+                        android:drawablePadding="@dimen/x20"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/x28"
+                        android:paddingRight="@dimen/x28"
+                        android:text="@string/settings_trouble_notice_tx"
+                        android:textColor="@color/ff383837"
+                        android:textSize="@dimen/text_size_16" />
+
+                    <com.haier.cellarette.baselibrary.widget.SwitchButton
+                        android:id="@+id/sb_trouble_notice"
+                        android:layout_width="@dimen/x95"
+                        android:layout_height="@dimen/y68"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/x28"
+                        app:sb_checked="true"
+                        app:sb_show_indicator="false" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y53"
+                    android:background="#EDEBE9">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/x28"
+                        android:paddingRight="@dimen/x28"
+                        android:text="显示模式"
+                        android:textColor="#888580"
+                        android:textSize="@dimen/text_size_12" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y106">
+
+                    <TextView
+                        android:id="@+id/tv_cen_degree"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/on_touch_bg"
+                        android:clickable="true"
+                        android:drawablePadding="@dimen/x20"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/x28"
+                        android:paddingRight="@dimen/x28"
+                        android:text="@string/settings_cen_degree_tx"
+                        android:textColor="@color/ff383837"
+                        android:textSize="@dimen/text_size_16" />
+
+                    <com.haier.cellarette.baselibrary.widget.SmoothCheckBox
+                        android:id="@+id/scb_cen_degree"
+                        android:layout_width="@dimen/x48"
+                        android:layout_height="@dimen/y56"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/x36"
+                        app:color_checked="#ff51d367"
+                        app:stroke_width="2dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="@dimen/x28"
+                        android:layout_marginRight="@dimen/x28"
+                        android:background="#DCDCDC" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y106">
+
+                    <TextView
+                        android:id="@+id/tv_fah_degree"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/on_touch_bg"
+                        android:clickable="true"
+                        android:drawablePadding="@dimen/x20"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/x28"
+                        android:paddingRight="@dimen/x28"
+                        android:text="@string/settings_fah_degree_tx"
+                        android:textColor="@color/ff383837"
+                        android:textSize="@dimen/text_size_16" />
+
+                    <com.haier.cellarette.baselibrary.widget.SmoothCheckBox
+                        android:id="@+id/scb_fah_degree"
+                        android:layout_width="@dimen/x48"
+                        android:layout_height="@dimen/y56"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/x36"
+                        app:color_checked="#ff51d367"
+                        app:stroke_width="2dp" />
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/rl_top"
+                    android:orientation="vertical"
+                    android:showDividers="middle">
+                    <!--<TextView-->
+                    <!--android:id="@+id/tv_clear_memory"-->
+                    <!--style="@style/settings_style"-->
+                    <!--android:text="@string/settings_clear_memory_tx"/>-->
+                    <!--<TextView-->
+                    <!--android:id="@+id/tv_check_updates"-->
+                    <!--style="@style/settings_style"-->
+                    <!--android:text="@string/settings_check_updates_tx"/>-->
+                    <!--<TextView-->
+                    <!--android:id="@+id/tv_help"-->
+                    <!--style="@style/settings_style"-->
+                    <!--android:text="@string/settings_help_tx"-->
+                    <!--android:textSize="@dimen/text_size_16"/>-->
+                    <!--<TextView-->
+                    <!--android:id="@+id/tv_about"-->
+                    <!--style="@style/settings_style"-->
+                    <!--android:text="@string/settings_about_tx"/>-->
+                    <!--<TextView-->
+                    <!--android:id="@+id/tv_logout"-->
+                    <!--style="@style/settings_style"-->
+                    <!--android:text="@string/settings_logout_tx"/>-->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/y53"
+                        android:background="#EDEBE9">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/x28"
+                            android:paddingRight="@dimen/x28"
+                            android:text="订单管理"
+                            android:textColor="#888580"
+                            android:textSize="@dimen/text_size_12" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tv_settings_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/y106"
+                        android:background="@drawable/on_touch_bg"
+                        android:clickable="true"
+                        android:drawablePadding="@dimen/x20"
+                        android:drawableRight="@drawable/icon_arrow"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/x28"
+                        android:paddingRight="@dimen/x28"
+                        android:text="@string/settings_text_address"
+                        android:textColor="@color/ff383837"
+                        android:textSize="@dimen/text_size_16" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="@dimen/x28"
+                        android:layout_marginRight="@dimen/x28"
+                        android:background="#DCDCDC" />
+
+                    <TextView
+                        android:id="@+id/tv_settings_pay"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/y106"
+                        android:background="@drawable/on_touch_bg"
+                        android:clickable="true"
+                        android:drawablePadding="@dimen/x20"
+                        android:drawableRight="@drawable/icon_arrow"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/x28"
+                        android:paddingRight="@dimen/x28"
+                        android:text="支付"
+                        android:textColor="@color/ff383837"
+                        android:textSize="@dimen/text_size_16" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/y53"
+                        android:background="#EDEBE9">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/x28"
+                            android:paddingRight="@dimen/x28"
+                            android:text="系统"
+                            android:textColor="#888580"
+                            android:textSize="@dimen/text_size_12" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tv_volume"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/y106"
+                        android:background="@drawable/on_touch_bg"
+                        android:clickable="true"
+                        android:drawablePadding="@dimen/x20"
+                        android:drawableRight="@drawable/icon_arrow"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/x28"
+                        android:paddingRight="@dimen/x28"
+                        android:text="@string/settings_volume"
+                        android:textColor="@color/ff383837"
+                        android:textSize="@dimen/text_size_16" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="@dimen/x28"
+                        android:layout_marginRight="@dimen/x28"
+                        android:background="#DCDCDC" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/y106">
+
+                        <TextView
+                            android:id="@+id/tv_clear_memory"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/on_touch_bg"
+                            android:clickable="true"
+                            android:drawablePadding="@dimen/x20"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/x28"
+                            android:paddingRight="@dimen/x28"
+                            android:text="@string/settings_clear_memory_tx"
+                            android:textColor="@color/ff383837"
+                            android:textSize="@dimen/text_size_16" />
+
+                        <TextView
+                            android:id="@+id/tv_cache_memory"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/x28"
+                            android:gravity="right|center_vertical"
+                            android:textColor="#888580"
+                            android:textSize="@dimen/text_size_12" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="@dimen/x28"
+                            android:layout_marginRight="@dimen/x28"
+                            android:background="#DCDCDC" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tv_check_updates"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/y106"
+                        android:background="@drawable/on_touch_bg"
+                        android:clickable="true"
+                        android:drawablePadding="@dimen/x20"
+                        android:drawableRight="@drawable/icon_arrow"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/x28"
+                        android:paddingRight="@dimen/x28"
+                        android:text="@string/settings_check_updates_tx"
+                        android:textColor="@color/ff383837"
+                        android:textSize="@dimen/text_size_16" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="@dimen/x28"
+                        android:layout_marginRight="@dimen/x28"
+                        android:background="#DCDCDC" />
+
+                    <TextView
+                        android:id="@+id/tv_help"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/y106"
+                        android:background="@drawable/on_touch_bg"
+                        android:clickable="true"
+                        android:drawablePadding="@dimen/x20"
+                        android:drawableRight="@drawable/icon_arrow"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/x28"
+                        android:paddingRight="@dimen/x28"
+                        android:text="@string/settings_help_tx"
+                        android:textColor="@color/ff383837"
+                        android:textSize="@dimen/text_size_16" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="@dimen/x28"
+                        android:layout_marginRight="@dimen/x28"
+                        android:background="#DCDCDC" />
+
+                    <TextView
+                        android:id="@+id/tv_about"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/y106"
+                        android:background="@drawable/on_touch_bg"
+                        android:clickable="true"
+                        android:drawablePadding="@dimen/x20"
+                        android:drawableRight="@drawable/icon_arrow"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/x28"
+                        android:paddingRight="@dimen/x28"
+                        android:text="@string/settings_about_tx"
+                        android:textColor="@color/ff383837"
+                        android:textSize="@dimen/text_size_16" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/y45"
+                        android:background="#EDEBE9"></RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tv_logout"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/y106"
+                        android:background="@drawable/on_touch_bg"
+                        android:clickable="true"
+                        android:drawablePadding="@dimen/x20"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/x28"
+                        android:paddingRight="@dimen/x28"
+                        android:text="@string/settings_logout_tx"
+                        android:textColor="@color/ff383837"
+                        android:textSize="@dimen/text_size_16" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/y72"
+                        android:background="#EDEBE9"></RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </com.haier.cellarette.baselibrary.zuni.ZuniScrollView>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,64 @@
+FragmentContent21 ->196
+
+                                    // pos是>=2的
+                                    Fragment21Bean addressBean_tou = mAdapter.getData().get(position - 1);
+                                    Fragment21Bean addressBean = mAdapter.getData().get(position);
+                                    if (mAdapter.getData().size() == 2) {
+                                        //还剩2个item
+                                        /**
+                                         *  a
+                                         *  shan
+                                         */
+                                        mAdapter.getData().remove(addressBean_tou);
+                                        mAdapter.getData().remove(addressBean);
+                                        mAdapter.notifyItemRemoved(position - 1);
+                                        mAdapter.notifyItemRemoved(position);
+                                        //mAdapter.notifyDataSetChanged();
+                                        //改变视图bufen
+                                        set_emptyview();
+                                    } else {
+                                        //还有很多个item
+                                        int type_tou = addressBean_tou.type;
+                                        if (mAdapter.getData().size() > position + 1) {
+                                            /**
+                                             *  a
+                                             *  shan
+                                             *  b
+                                             *  222222222
+                                             */
+                                            int type_wei = mAdapter.getData().get(position + 1).type;
+                                            if (type_tou == Fragment21Bean.style2 && type_wei == Fragment21Bean.style2) {
+                                                mAdapter.getData().remove(addressBean_tou);
+                                                mAdapter.getData().remove(addressBean);
+                                                mAdapter.notifyItemRemoved(position - 1);
+                                                mAdapter.notifyItemRemoved(position);
+                                            }else {
+                                                /**
+                                                 *  a              a
+                                                 *  111shan11      111111111
+                                                 *  b              b
+                                                 *  22222222      222shan22
+                                                 */
+                                                mAdapter.getData().remove(addressBean);
+                                                mAdapter.notifyItemRemoved(position);
+                                            }
+                                        } else {
+                                            /**
+                                             *  a            a
+                                             *  111111111    111111111
+                                             *  b            b
+                                             *  shan         2shan
+                                             */
+                                            if (type_tou == Fragment21Bean.style2){
+                                                mAdapter.getData().remove(addressBean_tou);
+                                                mAdapter.getData().remove(addressBean);
+                                                mAdapter.notifyItemRemoved(position - 1);
+                                                mAdapter.notifyItemRemoved(position);
+                                            }else {
+                                                mAdapter.getData().remove(addressBean);
+                                                mAdapter.notifyItemRemoved(position);
+                                            }
+
+                                        }
+
+                                    }

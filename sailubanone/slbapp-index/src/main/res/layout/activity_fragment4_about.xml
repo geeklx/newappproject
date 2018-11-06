@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_EDEBE9"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_commtop" />
+
+    <LinearLayout
+        android:id="@+id/ll_touxiang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/y80"
+        android:layout_marginBottom="@dimen/x30"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.geek.libglide47.base.GlideImageView
+            android:id="@+id/iv_zhaoliying"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_zhaoliying"
+            app:siv_border_color="@color/blue33b5e5"
+            app:siv_border_width="1dp"
+            app:siv_pressed_alpha="0.3"
+            app:siv_pressed_color="@color/gray_list_head_text"
+            app:siv_radius="20dp"
+            app:siv_shape_type="rectangle" />
+
+        <TextView
+            android:id="@+id/tv1"
+            style="@style/logincommtextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="版本:V1.4.2"
+            android:textColor="@color/black_000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slb_my_btn_comm"
+            android:padding="@dimen/x20">
+
+            <TextView
+                style="@style/logincommtextview"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x20"
+                android:text="检查更新"
+                android:textColor="@color/black_000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/slb_back" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/view_line_color" />
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slb_my_btn_comm"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/x20">
+
+            <TextView
+                style="@style/logincommtextview"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x20"
+                android:layout_marginRight="@dimen/x20"
+                android:text="图片保存路径:"
+                android:textColor="@color/black_000" />
+
+            <TextView
+                android:id="@+id/img_url"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="111111111111111111111111111111111111111111" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/view_line_color" />
+
+        <LinearLayout
+            android:id="@+id/ll2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slb_my_btn_comm"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/x20">
+
+            <TextView
+                style="@style/logincommtextview"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x20"
+                android:layout_marginRight="@dimen/x20"
+                android:text="录像保存路径:"
+                android:textColor="@color/black_000" />
+
+            <TextView
+                android:id="@+id/video_url"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="111111111111111111111111111111111111111111" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal|bottom"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv11"
+            style="@style/logincommtextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="30dp"
+            android:text="《隐私权保护声明》"
+            android:textColor="@color/color_ff11B5AF" />
+    </LinearLayout>
+</LinearLayout>

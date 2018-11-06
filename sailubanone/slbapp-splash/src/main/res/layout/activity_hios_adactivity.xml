@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/web_web_toolbar2"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_adJumps"
+        android:layout_width="@dimen/x180"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/x50"
+        android:layout_marginTop="@dimen/x50"
+        android:alpha="0.8"
+        android:background="@drawable/splash_ad"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+</RelativeLayout>

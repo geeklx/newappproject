@@ -1,0 +1,65 @@
+apply plugin: 'com.android.library'
+//apply from: '../../mobsdk.gradle'
+def config = rootProject.ext
+def librarys = rootProject.ext.dependencies
+android {
+    compileSdkVersion config.compileSdkVersion
+    buildToolsVersion config.buildToolsVersion
+    defaultConfig {
+        minSdkVersion config.minSdkVersion
+        targetSdkVersion config.targetSdkVersion
+        versionCode config.versionCode
+        versionName config.versionName
+
+        multiDexEnabled true
+        renderscriptTargetApi 19
+        renderscriptSupportModeEnabled true
+        ndk {
+            moduleName "aaaa,bbb"
+            ldLibs "log", "z", "m", "android", "c"
+            abiFilters "armeabi", "armeabi-v7a", "x86"
+        }
+//        manifestPlaceholders = [
+//                JPUSH_APPKEY : "8a873a5464904872b9dad9f4", //JPush上注册的包名对应的appkey.
+//                JPUSH_CHANNEL : "developer-default", //暂时填写默认值即可.
+//        ]
+        sourceSets.main {
+            jni.srcDirs = []
+            //LOCAL_LDFLAGS += -fuse-ld=bfd
+            //jni.srcDirs 'src/main/jni'
+            jniLibs.srcDir '../../otherjar'
+        }
+        proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        signingConfig signingConfigs.debug
+    }
+    buildTypes {
+        release {
+
+            minifyEnabled false
+//            zipAlignEnabled false
+//            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    //common url
+    implementation librarys.design
+    implementation librarys.appcompatV7
+    implementation librarys.supportannotations
+    implementation librarys.recyclerviewv7
+    implementation librarys.cardviewv7
+
+    implementation files('../../otherjar/jcore-android-1.2.5.jar')
+    api files('../../otherjar/jpush-android-3.1.6.jar')
+//    implementation 'cn.jiguang.sdk:janalytics:1.1.1' // 此处以JAnalytics 1.1.1 版本为例。
+//    implementation 'cn.jiguang.sdk:jcore:1.2.5' // 此处以JCore 1.1.2 版本为例。
+
+    //jar aar
+
+    //rep /**rep*/不能换行
+//    /**rep*/implementation (name:'biz-identification_bxn_nation', ext:'aar')
+}

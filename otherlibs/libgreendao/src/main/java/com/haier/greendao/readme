@@ -1,0 +1,5 @@
+greendao用法：参考demogreendao写法
+DbManager：初始化数据库
+MigrationHelper：升级数据库时用于保存数据库信息的数据迁移
+GreenDaoHelper：数据库升级配置文件
+

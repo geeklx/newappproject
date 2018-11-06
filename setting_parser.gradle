@@ -1,0 +1,43 @@
+/**
+ * author: qibin
+ *
+ * a simple lexer for parse settings.gradle
+ */
+ext {
+    settingsResult = new ArrayList<String>()
+
+    isProjectOpen = { projectPath ->
+        if (settingsResult.isEmpty()) { readSettings()}
+
+        def path = projectPath.replaceAll($//|\\/$, ":")
+        for (String item : settingsResult) {
+            if (path.endsWith(item)) { return true}
+        }
+
+        return false
+    }
+
+    readSettings = {
+        def settings = file("./settings.gradle")
+        def lines = settings.readLines()
+        def size = lines.size()
+
+        for (def i = 0; i < size; i++) {
+            def line = lines[i].replaceAll("(//.*)|(/\\*.*\\*/)", "")
+
+            if (!isEmptyLine(line)) {
+                line.split(",").each { item ->
+                    item = item.replaceAll($/"|'/$, "")
+                               .replaceAll($/\s*/$, "")
+                               .replaceAll($/include/$, "")
+                    settingsResult.add(item)
+                }
+            }
+        }
+    }
+
+    isEmptyLine = { line ->
+        if (line == null || line.length() == 0) { return true}
+        return false
+    }
+}

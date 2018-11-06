@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Library</string>
+    <string name="cancel">取消</string>
+    <string name="sure">确认</string>
+
+    <string name="app_xbbyzbh">新版本已准备好</string>
+    <string name="app_shaz">稍后安装</string>
+    <string name="app_lkaz">立刻安装</string>
+</resources>

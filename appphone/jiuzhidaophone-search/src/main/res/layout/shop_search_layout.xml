@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/search_block"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusableInTouchMode="true"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    >
+
+    <ImageView
+        android:id="@+id/search_back"
+        android:layout_width="@dimen/x75"
+        android:layout_height="match_parent"
+        android:baselineAligned="false"
+        android:scaleType="fitCenter"
+        android:src="@drawable/shop_search_back_icon"/>
+
+    <com.haier.search.view.EditText_Clear
+        android:id="@+id/et_search"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/bg_edit_clear"
+        android:drawableLeft="@drawable/search"
+        android:drawablePadding="@dimen/x6"
+        android:paddingLeft="@dimen/x10"
+        android:imeOptions="actionSearch"
+        android:singleLine="true"
+        />
+
+    <TextView
+        android:layout_marginRight="@dimen/x24"
+        android:layout_marginLeft="@dimen/x24"
+        android:id="@+id/tv_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/search"
+        android:textColor="#2E2E2E"
+        android:textSize="@dimen/text_size_18"/>
+</LinearLayout>

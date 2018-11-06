@@ -1,0 +1,53 @@
+ext {
+
+    defaultVariantIndex = 2
+    // 测试，预生产，线上
+    variants = ['BXNT_101_NATION', 'BXNY_101_NATION', 'BXN_101_NATION']
+    apps = [/*'app',*/ /*'appjiuzhidao',*/ 'appphone','sailubanone']
+
+    variantMapping = { variant ->
+        def arr = variant.split "_"
+        "${arr[0]}_${arr[2]}"
+    }
+
+    apkNameMapping = { variant ->
+        def versionCode = rootProject.ext.versionCode
+        def versionNameSuffix = rootProject.ext.versionNameSuffix
+        def versionNamePrefix = ""
+        switch (variant) {
+            case variants[0]:
+                versionNamePrefix = rootProject.ext.versionNamePrefixT
+                break
+            case variants[1]:
+                versionNamePrefix = rootProject.ext.versionNamePrefixY
+                break
+            case variants[2]:
+                versionNamePrefix = rootProject.ext.versionNamePrefixO
+                break
+        }
+        return versionNamePrefix + versionCode + versionNameSuffix
+    }
+
+    apkNameMappingNew = { appName, variant ->
+        def versionNamePrefix = ""
+        switch (variant) {
+            case variants[0]:
+                versionNamePrefix = rootProject.ext.versionNamePrefixT
+                break
+            case variants[1]:
+                versionNamePrefix = rootProject.ext.versionNamePrefixY
+                break
+            case variants[2]:
+                versionNamePrefix = rootProject.ext.versionNamePrefixO
+                break
+        }
+
+        result = appName + versionNamePrefix + rootProject.ext.appNameSuffix
+        result.toUpperCase()
+//        if (rootProject.ext.IS_FOR_UM) {
+//            result.toLowerCase()
+//        } else {
+//            result.toUpperCase()
+//        }
+    }
+}

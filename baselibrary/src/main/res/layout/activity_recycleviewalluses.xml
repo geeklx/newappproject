@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="left"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="RecycleView-Animation" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="RecycleView-Header/Footer" />
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="RecycleView-Section" />
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="RecycleView-MultipleItem" />
+
+        <TextView
+            android:id="@+id/tv5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="RecycleView-DragAndSwipe" />
+
+        <TextView
+            android:id="@+id/tv6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="RecycleView-DataBinding" />
+
+        <TextView
+            android:id="@+id/tv7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="RecycleView-UpFetchData" />
+
+        <TextView
+            android:id="@+id/tv8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="RecycleView-EmptyView" />
+
+        <TextView
+            android:id="@+id/tv9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="RecycleView-PullToRefresh" />
+
+    </LinearLayout>
+</ScrollView>

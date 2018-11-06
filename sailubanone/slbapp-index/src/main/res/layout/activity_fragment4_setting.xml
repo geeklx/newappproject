@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_EDEBE9"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_commtop" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.haier.cellarette.baselibrary.zuni.ZuniScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/x30">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/logincommtextview"
+                            android:text="@string/slb_my_tip1"
+                            android:textColor="@color/black_000" />
+
+                        <TextView
+                            style="@style/logincommtextview"
+                            android:text="@string/slb_my_tip2"
+                            android:textColor="@color/gray_list_head_text"
+                            android:textSize="@dimen/text_size_12" />
+                    </LinearLayout>
+
+                    <com.haier.cellarette.baselibrary.widget.SwitchButton
+                        android:id="@+id/slb_sb1"
+                        android:layout_width="@dimen/x95"
+                        android:layout_height="@dimen/y68"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        app:sb_checked="false"
+                        app:sb_show_indicator="false" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/view_line_color" />
+
+                <LinearLayout
+                    android:id="@+id/ll1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/slb_my_btn_comm"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/x30">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/logincommtextview"
+                            android:text="@string/slb_my_tip3"
+                            android:textColor="@color/black_000" />
+
+                        <TextView
+                            style="@style/logincommtextview"
+                            android:text="@string/slb_my_tip4"
+                            android:textColor="@color/gray_list_head_text"
+                            android:textSize="@dimen/text_size_12" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv1"
+                        style="@style/logincommtextview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0.00B"
+                        android:textColor="@color/color_ff11B5AF" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/view_line_color" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/x30">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/logincommtextview"
+                            android:text="@string/slb_my_tip5"
+                            android:textColor="@color/black_000" />
+
+                        <TextView
+                            style="@style/logincommtextview"
+                            android:text="@string/slb_my_tip6"
+                            android:textColor="@color/gray_list_head_text"
+                            android:textSize="@dimen/text_size_12" />
+                    </LinearLayout>
+
+                    <com.haier.cellarette.baselibrary.widget.SwitchButton
+                        android:id="@+id/slb_sb2"
+                        android:layout_width="@dimen/x95"
+                        android:layout_height="@dimen/y68"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        app:sb_checked="false"
+                        app:sb_show_indicator="false" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/view_line_color" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/x30">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/logincommtextview"
+                            android:text="@string/slb_my_tip7"
+                            android:textColor="@color/black_000" />
+
+                        <TextView
+                            style="@style/logincommtextview"
+                            android:text="@string/slb_my_tip8"
+                            android:textColor="@color/gray_list_head_text"
+                            android:textSize="@dimen/text_size_12" />
+                    </LinearLayout>
+
+                    <com.haier.cellarette.baselibrary.widget.SwitchButton
+                        android:id="@+id/slb_sb3"
+                        android:layout_width="@dimen/x95"
+                        android:layout_height="@dimen/y68"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        app:sb_checked="false"
+                        app:sb_show_indicator="false" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </com.haier.cellarette.baselibrary.zuni.ZuniScrollView>
+    </FrameLayout>
+
+</LinearLayout>

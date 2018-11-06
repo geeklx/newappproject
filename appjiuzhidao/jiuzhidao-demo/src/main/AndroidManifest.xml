@@ -1,0 +1,68 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.haier.cellarette.jiuzhidao_demo">
+
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.Black.NoTitleBar">
+
+
+        <service
+            android:name="com.haier.cellarette.jiuzhidao_demo.musics.playmusicservices"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":RomManageService" />
+
+        <activity android:name=".MainActivity">
+            <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.MAIN" />-->
+            <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+            <!--&lt;!&ndash;去掉桌面图标操作buifen&ndash;&gt;-->
+            <!--&lt;!&ndash;<data android:host="MainActivity" android:scheme="com.haier.cellarette.jiuzhidao_demo"&ndash;&gt;-->
+            <!--&lt;!&ndash;tools:ignore="AppLinkUrlError" />&ndash;&gt;-->
+            <!--</intent-filter>-->
+
+            <!--<intent-filter>-->
+            <!--<action android:name="shop.main" />-->
+            <!--<category android:name="android.intent.category.DEFAULT" />-->
+            <!--</intent-filter>-->
+
+            <!--<intent-filter>-->
+            <!--<action android:name="hs.act.main" />-->
+            <!--<category android:name="android.intent.category.DEFAULT" />-->
+            <!--</intent-filter>-->
+        </activity>
+
+        <activity android:name=".DemoMainActivity" />
+        <activity android:name=".shouye.DemoIndexMainActivity" />
+        <activity android:name=".DemoRetrofitActivity" />
+
+        <activity
+            android:name=".musics.splash_login.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/StartTheme"></activity>
+        <activity
+            android:name=".musics.splash_login.SplshActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/StartTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".musics.splash_login.TestActivity"></activity>
+        <activity
+            android:name=".musics.splash_login.PollOrderActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+    </application>
+</manifest>

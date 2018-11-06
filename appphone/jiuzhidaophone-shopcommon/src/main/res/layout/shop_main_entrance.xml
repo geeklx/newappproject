@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/y206"
+              android:layout_gravity="center"
+              android:layout_marginTop="@dimen/y23"
+              android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/shop_main_entrance_bimai"
+        style="@style/shop_main_entrance"
+        android:layout_marginLeft="@dimen/x32">
+
+        <ImageView
+            style="@style/shop_main_entrance_img"
+            android:src="@drawable/bimaiqingdan"/>
+
+        <TextView
+            android:text="必买清单"
+            style="@style/shop_main_entrance_text"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/shop_main_entrance_renqi"
+        style="@style/shop_main_entrance"
+        android:layout_marginRight="99px"
+        android:layout_marginLeft="99px">
+
+        <ImageView
+            style="@style/shop_main_entrance_img"
+            android:src="@drawable/renqiqianggou"/>
+
+        <TextView
+            android:text="人气抢购"
+            style="@style/shop_main_entrance_text"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/shop_main_entrance_zhengxiang"
+       style="@style/shop_main_entrance"
+        android:layout_marginRight="99px">
+
+        <ImageView
+            style="@style/shop_main_entrance_img"
+            android:src="@drawable/bimaiqingdan"/>
+
+        <TextView
+            android:text="整箱特惠"
+            style="@style/shop_main_entrance_text"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/shop_main_entrance_zhidemai"
+        style="@style/shop_main_entrance"
+        android:layout_marginRight="44px">
+
+        <ImageView
+            style="@style/shop_main_entrance_img"
+            android:src="@drawable/zhideimai"/>
+
+        <TextView
+            android:text="值得买"
+            style="@style/shop_main_entrance_text"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

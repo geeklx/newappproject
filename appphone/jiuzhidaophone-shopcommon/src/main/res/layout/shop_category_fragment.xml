@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include layout="@layout/page_header" />
+
+    <!--搜索入口-->
+    <com.haier.shopcommon.jeffery.view.searchview.CommonSearchView
+        android:id="@+id/csv_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:searchBlockHeight="120"
+        android:layout_marginTop="@dimen/y10"
+        app:textColorSearch="#9b9b9b"
+        app:searchBlockColor="#F8F8F8"
+        app:searchRightPic="@drawable/common_search_right_pic"
+        app:textHintSearch="拉睦"
+        app:textSizeSearch="@dimen/x12"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:layout_marginTop="@dimen/y10"
+        android:background="#DADADA"/>
+
+
+    <LinearLayout
+        android:background="#FBFCFB"
+        android:layout_marginTop="@dimen/y11"
+        android:orientation="horizontal"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <ListView
+            android:id="@+id/lv_cate_list"
+            android:scrollbars="none"
+            android:layout_width="@dimen/x153"
+            android:layout_height="match_parent"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rcv_cate_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

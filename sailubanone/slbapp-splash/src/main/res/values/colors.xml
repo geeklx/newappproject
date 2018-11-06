@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#EABA7C</color>
+    <color name="colorPrimary">#EABA7C</color>
+    <color name="navigationBarColor">#EABA7C</color>
+
+    <color name="colorPrimaryDarkTrans">#EABA7C</color>
+    <color name="gold_color">#EABA7C</color>
+    <color name="black">#3D3B4A</color>
+</resources>

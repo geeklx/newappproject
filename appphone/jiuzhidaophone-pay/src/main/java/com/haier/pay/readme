@@ -1,0 +1,12 @@
+支付体系页面->马壮
+
+//版本判断
+    if (TextUtils.equals(ConstantNetConfig.VERSION_NAME, "ceshi")) {
+
+    } else if (TextUtils.equals(ConstantNetConfig.VERSION_NAME, "yushengchan")) {
+
+    } else if (TextUtils.equals(ConstantNetConfig.VERSION_NAME, "xianshang")) {
+
+    }
+
+

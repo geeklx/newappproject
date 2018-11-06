@@ -1,0 +1,59 @@
+apply plugin: 'com.android.library'
+
+def config = rootProject.ext
+def librarys = rootProject.ext.dependencies
+android {
+    compileSdkVersion config.compileSdkVersion
+    buildToolsVersion config.buildToolsVersion
+    defaultConfig {
+        minSdkVersion config.minSdkVersion
+        targetSdkVersion config.targetSdkVersion
+        versionCode config.versionCode
+        versionName config.versionName
+
+        multiDexEnabled true
+        renderscriptTargetApi 19
+        renderscriptSupportModeEnabled true
+        ndk {
+            moduleName "aaaa,bbb"
+            ldLibs "log", "z", "m", "android", "c"
+            abiFilters "armeabi", "armeabi-v7a", "x86"
+        }
+        sourceSets.main {
+            jni.srcDirs = []
+            //LOCAL_LDFLAGS += -fuse-ld=bfd
+            //jni.srcDirs 'src/main/jni'
+            jniLibs.srcDir 'src/main/libs'
+        }
+        proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        signingConfig signingConfigs.debug
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+//            zipAlignEnabled false
+//            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    implementation project(':baselibrary')
+    implementation librarys.glide37
+    implementation project(':commonlibs:libglide37')
+    //jar aar
+    implementation files('libs/alipaySdk-20180403.jar')
+    implementation files('libs/UPPayAssistEx.jar')
+    implementation files('libs/UPPayPluginExPro.jar')
+    implementation 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:+'
+
+    //rep /**rep*/不能换行bufen
+    /**rep*/implementation (name:'biz2-phone-pay-wx2_bxn_nation', ext:'aar')
+    /**rep*/implementation (name:'biz2-phone-demo1_bxn_nation', ext:'aar')
+
+
+}

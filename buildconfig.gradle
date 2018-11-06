@@ -1,0 +1,95 @@
+ext {
+
+    compileSdkVersion = 28
+    buildToolsVersion = '28.0.3'
+    minSdkVersion = 21
+    targetSdkVersion = compileSdkVersion
+    supportLibVersion = '27.1.1'
+
+    versionCode = 100
+    versionNamePrefixT = "T_101_"
+    versionNamePrefixY = "Y_101_"
+    versionNamePrefixO = "O_101_"
+    versionNameSuffix = "_0000"
+//    appNameSuffix = "-v" + versionCode
+    /**support:BXNT_101_NATION*/
+//    versionName = versionNamePrefixO + versionCode + versionNameSuffix
+    versionName = versionCode + versionNameSuffix
+
+
+    dependencies = [
+            // ------------- Android -------------
+            supportV4            : "com.android.support:support-v4:${supportLibVersion}",
+            appcompatV7          : "com.android.support:appcompat-v7:${supportLibVersion}",
+            supportannotations   : "com.android.support:support-annotations:${supportLibVersion}",
+            design               : "com.android.support:design:${supportLibVersion}",
+            cardviewv7           : "com.android.support:cardview-v7:${supportLibVersion}",
+            recyclerviewv7       : "com.android.support:recyclerview-v7:${supportLibVersion}",
+            percent              : "com.android.support:percent:$supportLibVersion",
+            multidexVersion      : "com.android.support:multidex:1.0.3",
+
+            junit                : "junit:junit:4.12",
+            //------------- 测试 -------------
+            espresso             : "com.android.support.test.espresso:espresso-core:2.2.2",
+
+            // ------------- 网络请求 -------------
+            okhttpVersion        : "com.squareup.okhttp3:okhttp:3.9.1",
+            okhttploggerinter    : "com.squareup.okhttp3:logging-interceptor:3.9.1",
+            okioVersion          : "com.squareup.okio:okio:1.14.0",
+
+            retrofit             : "com.squareup.retrofit2:retrofit:2.3.0",
+            retrofitconverters   : "com.squareup.retrofit2:retrofit-converters:2.3.0",
+            retrofitgconverter   : "com.squareup.retrofit2:converter-gson:2.3.0",
+
+            // ------------- 图片加载 -------------
+            fresco               : "com.facebook.fresco:fresco:0.11.0",
+            animatedGif          : "com.facebook.fresco:animated-gif:0.12.0",
+            picasso              : "com.squareup.picasso:picasso:2.5.2",
+            photoView            : "com.github.chrisbanes:PhotoView:2.1.3",
+            nineoldandroids      : "com.nineoldandroids:library:2.4.0",
+            zxing                : "com.google.zxing:core:3.2.1",
+            glide37              : "com.github.bumptech.glide:glide:3.8.0",
+            glide37okhttp3       : "com.github.bumptech.glide:okhttp3-integration:1.5.0",
+
+            glide47                                     : "com.github.bumptech.glide:glide:4.8.0",
+            glide47AnnProcessor                       : "com.github.bumptech.glide:annotations:4.8.0",
+            annotationProcessorglide47compiler      : "com.github.bumptech.glide:compiler:4.8.0",
+            glide47okhttp3integration                : "com.github.bumptech.glide:okhttp3-integration:4.8.0",
+
+
+            // ------------- RxAndroid -------------
+            rxAndroid            : "io.reactivex:rxandroid:1.2.1",
+            rxJava               : "io.reactivex:rxjava:1.2.2",
+            adapterrxjava        : "com.squareup.retrofit2:adapter-rxjava:2.1.0",
+
+            // ------------- json解析 -------------
+            fastJson             : "com.alibaba:fastjson:1.1.56.android",
+            gsonJson             : "com.google.code.gson:gson:2.8.2",
+
+            // ------------- log打印工具 -------------
+            logger               : "com.orhanobut:logger:1.15",
+
+            // ------------- 数据库工具 -------------
+            greendao             : "org.greenrobot:greendao:3.2.2",
+            generator            : "org.greenrobot:greendao-generator:3.2.2",
+
+            // ------------- ButterKnife -------------
+            butterknife          : "com.jakewharton:butterknife:8.4.0",
+            butterknifeCompiler  : "com.jakewharton:butterknife-compiler:8.4.0",
+
+            // ------------- LeakCanary -------------
+            leakcanaryAndroid    : "com.squareup.leakcanary:leakcanary-android:1.5",
+            leakcanaryAndroidNoOp: "com.squareup.leakcanary:leakcanary-android-no-op:1.5",
+
+            // ------------- 高德地图 -------------
+            gaode3d              : 'com.amap.api:3dmap:latest.integration',
+            gaode2d              : 'com.amap.api:map2d:latest.integration',
+            //定位功能
+            gaodelocation        : 'com.amap.api:location:latest.integration',
+            //搜索功能
+            gaodesearch          : 'com.amap.api:search:latest.integration',
+            // ------------- BaseRecyclerViewAdapterHelper -------------
+            baseadapter          : 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.22',
+    ]
+
+}

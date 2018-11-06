@@ -1,0 +1,21 @@
+https://github.com/SherlockGougou/BigImageViewPager
+
+
+//        ImagePreview
+//                .getInstance()
+//                .setContext(getActivity())
+//                .setIndex(5)
+//                .setImageInfoList(Fragment21Bean.get_img_info_list())
+//                .setShowDownButton(true)
+//                .setShowOriginButton(true)
+//                .setFolderName(ConstantsUtils.gen_img)
+//                .setScaleLevel(1, 3, 8)
+//                .setScaleMode(ImagePreview.MODE_SCALE_TO_MEDIUM_TO_MAX_TO_MIN)
+//                .setZoomTransitionDuration(500)
+//                .start();
+
+
+
+
+
+

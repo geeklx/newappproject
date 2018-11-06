@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.haier.cellarette.baselibrary.zothers.AutoHideInputMethodFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_F9F7F9">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/activity_login_top" />
+
+        <TextView
+            android:id="@+id/tv_error"
+            style="@style/logincommtextview"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/x30"
+            android:maxEms="15"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/red" />
+
+        <include layout="@layout/activity_zhuce_top" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y60"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_marginRight="@dimen/x10"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:padding="@dimen/x20">
+
+                <EditText
+                    android:id="@+id/edt11"
+                    style="@style/logincontentedit"
+                    android:hint="@string/yhzc_tip4"
+                    android:inputType="textVisiblePassword"
+                    android:maxLength="11"
+                    android:padding="@dimen/x10"
+                    android:textSize="@dimen/text_size_18" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_hqyzm"
+                android:layout_width="@dimen/x200"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/x10"
+                android:background="@drawable/btn_sure"
+                android:text="@string/yhzc_tip5"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_12" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_tel1"
+            style="@style/logincommtextview"
+            android:padding="@dimen/x20"
+            android:text="@string/yhzc_tip9" />
+
+
+        <Button
+            android:id="@+id/btn_sure"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y100"
+            android:layout_marginLeft="@dimen/x40"
+            android:layout_marginRight="@dimen/x40"
+            android:layout_marginTop="@dimen/x40"
+            android:background="@drawable/btncomm_enpressed"
+            android:text="注册"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/text_size_16" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cb1"
+                style="@style/CustomCheckBoxTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x40"
+                android:layout_marginTop="@dimen/x40"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/x10"
+                android:text="我已阅读并同意"
+                android:textColor="@color/gray_list_head_text" />
+
+            <TextView
+                android:id="@+id/tv_webview1"
+                style="@style/logincommtextview"
+                android:layout_gravity="bottom"
+                android:text="注册服务协议"
+                android:textColor="@color/blue33b5e5"
+                android:textSize="@dimen/text_size_18" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</com.haier.cellarette.baselibrary.zothers.AutoHideInputMethodFrameLayout>

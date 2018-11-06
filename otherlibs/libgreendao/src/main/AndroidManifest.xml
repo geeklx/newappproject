@@ -1,0 +1,12 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.haier.greendao" >
+    <application>
+        <activity android:name=".demogreendao.GreenDaoAct">
+            <intent-filter>
+                <action android:name="com.GreenDaoAct.act" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

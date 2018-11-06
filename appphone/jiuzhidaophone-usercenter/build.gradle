@@ -1,0 +1,55 @@
+apply plugin: 'com.android.library'
+def config = rootProject.ext
+def librarys = rootProject.ext.dependencies
+android {
+    compileSdkVersion config.compileSdkVersion
+    buildToolsVersion config.buildToolsVersion
+    defaultConfig {
+        minSdkVersion config.minSdkVersion
+        targetSdkVersion config.targetSdkVersion
+        versionCode config.versionCode
+        versionName config.versionName
+
+        multiDexEnabled true
+        renderscriptTargetApi 19
+        renderscriptSupportModeEnabled true
+        ndk {
+            moduleName "aaaa,bbb"
+            ldLibs "log", "z", "m", "android", "c"
+            abiFilters "armeabi", "armeabi-v7a", "x86"
+        }
+        sourceSets.main {
+            jni.srcDirs = []
+            //LOCAL_LDFLAGS += -fuse-ld=bfd
+            //jni.srcDirs 'src/main/jni'
+            jniLibs.srcDir 'src/main/libs'
+        }
+        proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        signingConfig signingConfigs.debug
+    }
+    buildTypes {
+        release {
+
+            minifyEnabled false
+//            zipAlignEnabled false
+//            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation project(':baselibrary')
+    implementation librarys.glide37
+    implementation project(':commonlibs:libglide37')
+
+
+    //jar aar
+
+    //rep /**rep*/不能换行
+//    /**rep*/implementation (name:'biz-identification_bxn_nation', ext:'aar')
+
+}

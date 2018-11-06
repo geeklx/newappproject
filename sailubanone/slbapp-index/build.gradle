@@ -1,0 +1,64 @@
+apply plugin: 'com.android.library'
+def config = rootProject.ext
+def librarys = rootProject.ext.dependencies
+android {
+    compileSdkVersion config.compileSdkVersion
+    buildToolsVersion config.buildToolsVersion
+    defaultConfig {
+        minSdkVersion config.minSdkVersion
+        targetSdkVersion config.targetSdkVersion
+        versionCode config.versionCode
+        versionName config.versionName
+
+        multiDexEnabled true
+        renderscriptTargetApi 19
+        renderscriptSupportModeEnabled true
+        ndk {
+            moduleName "aaaa,bbb"
+            ldLibs "log", "z", "m", "android", "c"
+            abiFilters "armeabi", "armeabi-v7a", "x86"
+        }
+        sourceSets.main {
+            jni.srcDirs = []
+            //LOCAL_LDFLAGS += -fuse-ld=bfd
+            //jni.srcDirs 'src/main/jni'
+            jniLibs.srcDir '../../otherjar'
+        }
+        proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        signingConfig signingConfigs.debug
+    }
+    buildTypes {
+        release {
+
+            minifyEnabled false
+//            zipAlignEnabled false
+//            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    //common aar
+    implementation project(':otherlibs:libgreendao')
+
+    implementation project(':baselibrary')
+    implementation librarys.glide47
+    implementation project(':commonlibs:libglide47')
+
+    implementation project(':commonlibs:libupdateapputils')
+    implementation project(':otherlibs:slbapp-jpush')
+//    implementation project(':otherlibs:libraryglide37sinayulan')
+
+    // BigImageViewPager
+    implementation 'com.github.SherlockGougou:BigImageViewPager:v4_2.1.0'
+//    implementation project(':biz3:biz3-slbapp-demo1')
+
+    //rep /**rep*/不能换行
+    /**rep*/implementation (name:'biz3-slbapp-demo1_bxn_nation', ext:'aar')
+
+
+}

@@ -1,0 +1,11 @@
+<resources>
+    <style name="shop_search_words_tag_item">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/x12</item>
+        <item name="android:padding">@dimen/x18</item>
+        <item name="android:textSize">@dimen/text_size_15</item>
+        <item name="android:textColor">@drawable/tag_text_color</item>
+    </style>
+
+</resources>

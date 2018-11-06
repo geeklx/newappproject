@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_cart_anim"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/car_add"
+    android:ellipsize="end"
+    android:maxLength="4"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:gravity="center"
+    android:paddingRight="10dp"
+    android:singleLine="true"
+    android:text="+1"
+    android:textColor="@android:color/white"
+    android:textSize="18sp" />

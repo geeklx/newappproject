@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_EDEBE9"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_fragment2_top" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:background="@color/color_CC11B5AF"
+        android:orientation="vertical">
+
+        <com.haier.cellarette.baselibrary.tablayout.UnAnimTabLayout
+            android:id="@+id/tablayout_my"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:clipToPadding="false"
+            app:tabIndicatorColor="@color/white"
+            app:tabIndicatorHeight="1dp"
+            app:tabMaxWidth="0dp"
+            app:tabMinWidth="0dp"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="@color/white"
+            app:tabTextAppearance="@style/tab_text_size"
+            app:tabTextColor="@color/white" />
+    </LinearLayout>
+
+    <com.haier.cellarette.baselibrary.tablayout.ViewPagerSlide
+        android:id="@+id/viewpager_my"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+
+</LinearLayout>

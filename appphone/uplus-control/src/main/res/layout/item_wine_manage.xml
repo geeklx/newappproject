@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="240dp"
+    android:orientation="vertical">
+    <ImageView
+        android:id="@+id/iv_wine"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center"
+        android:src="@drawable/wine"/>
+    <TextView
+        android:id="@+id/tv_wine_name"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:text="祁连山*烛光之夜冰白葡萄酒"/>
+
+</LinearLayout>

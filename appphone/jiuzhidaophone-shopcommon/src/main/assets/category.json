@@ -1,0 +1,507 @@
+{
+  "code": 0,
+  "data": [
+    {
+      "type": "category",
+      "dataList": [
+        {
+          "id": "",
+          "desc": "",
+          "type": "category",
+          "title": "中国",
+          "imgURL": "https://wicdn.xiaohongchun.com/xhc-plat/1498710441052_sEBKxDGdsk.png",
+          "linkType": "storeTags",
+          "linkParam": "",
+          "online_time": "",
+          "offline_time": ""
+        },
+        {
+          "id": "",
+          "desc": "",
+          "type": "category",
+          "title": "加拿大",
+          "imgURL": "https://wicdn.xiaohongchun.com/xhc-plat/1498710472390_45K78X5reB.png",
+          "linkType": "storeTags",
+          "linkParam": "",
+          "online_time": "",
+          "offline_time": ""
+        },
+        {
+          "id": "",
+          "desc": "",
+          "type": "category",
+          "title": "德国",
+          "imgURL": "https://wicdn.xiaohongchun.com/xhc-plat/1498710554585_2RTBRZywGx.png",
+          "linkType": "storeTags",
+          "linkParam": "",
+          "online_time": "",
+          "offline_time": ""
+        },
+        {
+          "id": "",
+          "desc": "",
+          "type": "category",
+          "title": "意大利",
+          "imgURL": "https://wicdn.xiaohongchun.com/xhc-plat/1498710514471_4WzijshZNF.png",
+          "linkType": "storeTags",
+          "linkParam": "",
+          "online_time": "",
+          "offline_time": ""
+        },
+        {
+          "id": "",
+          "desc": "",
+          "type": "category",
+          "title": "新西兰",
+          "imgURL": "https://wicdn.xiaohongchun.com/xhc-plat/1498710501706_bxxCbQJGmR.png",
+          "linkType": "storeTags",
+          "linkParam": "",
+          "online_time": "",
+          "offline_time": ""
+        },
+        {
+          "id": "",
+          "desc": "",
+          "type": "category",
+          "title": "智利",
+          "imgURL": "https://wicdn.xiaohongchun.com/xhc-plat/1498710526168_YmWG2i3AzE.png",
+          "linkType": "storeTags",
+          "linkParam": "",
+          "online_time": "",
+          "offline_time": ""
+        },
+        {
+          "id": "",
+          "desc": "",
+          "type": "category",
+          "title": "法国",
+          "imgURL": "https://wicdn.xiaohongchun.com/xhc-plat/1498710533949_m8XEAWX5ES.png",
+          "linkType": "storeTags",
+          "linkParam": "",
+          "online_time": "",
+          "offline_time": ""
+        },
+        {
+          "id": "",
+          "desc": "",
+          "type": "category",
+          "title": "澳大利亚",
+          "imgURL": "https://wicdn.xiaohongchun.com/xhc-plat/1498710609909_jnneTMBiT6.png",
+          "linkType": "storeTags",
+          "linkParam": "",
+          "online_time": "",
+          "offline_time": ""
+        },
+        {
+          "id": "",
+          "desc": "",
+          "type": "category",
+          "title": "美国",
+          "imgURL": "https://wicdn.xiaohongchun.com/xhc-plat/1498710601873_Nx7e2ixMyh.png",
+          "linkType": "storeTags",
+          "linkParam": "",
+          "online_time": "",
+          "offline_time": ""
+        },
+        {
+          "id": "",
+          "desc": "",
+          "type": "category",
+          "title": "葡萄牙",
+          "imgURL": "https://wicdn.xiaohongchun.com/xhc-plat/1498716998583_HWBWy6FGA6.png",
+          "linkType": "storeTags",
+          "linkParam": "",
+          "online_time": "",
+          "offline_time": ""
+        },
+        {
+          "id": "",
+          "desc": "",
+          "type": "category",
+          "title": "西班牙",
+          "imgURL": "https://wicdn.xiaohongchun.com/xhc-plat/1498718851115_zn75ZyRTFJ.png",
+          "linkType": "storeTags",
+          "linkParam": "",
+          "online_time": "",
+          "offline_time": ""
+        },
+        {
+          "id": "",
+          "desc": "",
+          "type": "category",
+          "title": "阿根廷",
+          "imgURL": "https://wicdn.xiaohongchun.com/xhc-plat/1498710625995_iM3f5XSt88.png",
+          "linkType": "storeTags",
+          "linkParam": "",
+          "online_time": "",
+          "offline_time": ""
+        },
+        {
+          "id": "",
+          "desc": "",
+          "type": "category",
+          "title": "其他",
+          "imgURL": "https://wicdn.xiaohongchun.com/xhc-plat/1498717016560_WeT7A4NiSz.png",
+          "linkType": "storeTags",
+          "linkParam": "",
+          "online_time": "",
+          "offline_time": ""
+        }
+      ],
+      "moreIcon": "https://wicdn.xiaohongchun.com/xhc-plat/1499690581646_JYRiS8rkdp.png",
+      "moreText": "",
+      "moduleStyle": "nothing",
+      "moduleTitle": "产地",
+      "moreLinkType": "storeTags",
+      "interfaceLink": "TXT",
+      "moreLinkParam": "0",
+      "moreTextDisplay": "true"
+    },
+    {
+      "type": "category",
+      "dataList": [
+        {
+          "id": "",
+          "desc": "",
+          "type": "category",
+          "title": "眼部彩妆",
+          "imgURL": "https://wicdn.xiaohongchun.com/xhc-plat/1498739481861_dswtmFJB6S.png",
+          "linkType": "PIC_TXT",
+          "linkParam": "",
+          "online_time": "",
+          "offline_time": ""
+        },
+        {
+          "id": "",
+          "desc": "",
+          "type": "category",
+          "title": "唇部彩妆",
+          "imgURL": "https://wicdn.xiaohongchun.com/xhc-plat/1498739463693_QAxmSCrKFp.png",
+          "linkType": "PIC_TXT",
+          "linkParam": "",
+          "online_time": "",
+          "offline_time": ""
+        },
+        {
+          "id": "",
+          "desc": "",
+          "type": "category",
+          "title": "隔离/妆前乳",
+          "imgURL": "https://wicdn.xiaohongchun.com/xhc-plat/1498739495397_RABcPTHznz.png",
+          "linkType": "PIC_TXT",
+          "linkParam": "",
+          "online_time": "",
+          "offline_time": ""},
+        {
+          "id": "",
+          "desc": "",
+          "type": "category",
+          "title": "粉底/BB/CC",
+          "imgURL": "https://wicdn.xiaohongchun.com/xhc-plat/1498739488813_3nECGATKic.png",
+          "linkType": "PIC_TXT",
+          "linkParam": "",
+          "online_time": "",
+          "offline_time": ""
+        },
+        {
+          "id": "",
+          "desc": "",
+          "type": "category",
+          "title": "气垫",
+          "imgURL": "https://wicdn.xiaohongchun.com/xhc-plat/1498724758384_X64fyDYaNj.png",
+          "linkType": "PIC_TXT",
+          "linkParam": "",
+          "online_time": "",
+          "offline_time": ""
+        },
+        {
+          "id": "",
+          "desc": "",
+          "type": "category",
+          "title": "遮瑕",
+          "imgURL": "https://wicdn.xiaohongchun.com/xhc-plat/1498724773266_jBEF7eS7w4.png",
+          "linkType": "PIC_TXT",
+          "linkParam": "遮瑕",
+          "online_time": "",
+          "offline_time": ""
+        },
+        {
+          "id": "",
+          "desc": "",
+          "type": "category",
+          "title": "散粉/粉饼",
+          "imgURL": "https://wicdn.xiaohongchun.com/xhc-plat/1498724784059_6E8zYCTi8h.png",
+          "linkType": "PIC_TXT",
+          "linkParam": "",
+          "online_time": "",
+          "offline_time": ""
+        },
+        {
+          "id": "",
+          "desc": "",
+          "type": "category",
+          "title": "眉部彩妆",
+          "imgURL": "https://wicdn.xiaohongchun.com/xhc-plat/1498724797855_TR7z6n8WdX.png",
+          "linkType": "PIC_TXT",
+          "linkParam": "",
+          "online_time": "",
+          "offline_time": ""
+        },
+        {
+          "id": "",
+          "desc": "",
+          "type": "category",
+          "title": "修容/高光",
+          "imgURL": "https://wicdn.xiaohongchun.com/xhc-plat/1498739512914_DWDFK3aZnb.png",
+          "linkType": "PIC_TXT",
+          "linkParam": "",
+          "online_time": "",
+          "offline_time": ""
+        },
+        {
+          "id": "",
+          "desc": "",
+          "type": "category",
+          "title": "腮红",
+          "imgURL": "https://wicdn.xiaohongchun.com/xhc-plat/1498724876328_FhCZNReKhA.png",
+          "linkType": "PIC_TXT",
+          "linkParam": "",
+          "online_time": "",
+          "offline_time": ""
+        },
+        {
+          "id": "",
+          "desc": "",
+          "type": "category",
+          "title": "香水",
+          "imgURL": "https://wicdn.xiaohongchun.com/xhc-plat/1498724911895_6kAMePGyBJ.png",
+          "linkType": "PIC_TXT",
+          "linkParam": "",
+          "online_time": "",
+          "offline_time": ""
+        },
+        {
+          "id": "",
+          "desc": "",
+          "type": "category",
+          "title": "美甲",
+          "imgURL": "https://wicdn.xiaohongchun.com/xhc-plat/1498739521825_QrtNFGEmHP.png",
+          "linkType": "PIC_TXT",
+          "linkParam": "",
+          "online_time": "",
+          "offline_time": ""
+        },
+        {
+          "id": "",
+          "desc": "",
+          "type": "category",
+          "title": "彩妆套盒",
+          "imgURL": "https://wicdn.xiaohongchun.com/xhc-plat/1498724892846_6Yjf85CPCC.png",
+          "linkType": "PIC_TXT",
+          "linkParam": "",
+          "online_time": "",
+          "offline_time": ""
+        },
+        {
+          "id": "",
+          "desc": "",
+          "type": "category",
+          "title": "洗发",
+          "imgURL": "https://wicdn.xiaohongchun.com/xhc-plat/1498725791668_w8p6N7nR7r.png",
+          "linkType": "PIC_TXT",
+          "linkParam": "",
+          "online_time": "",
+          "offline_time": ""
+        },
+        {
+          "id": "",
+          "desc": "",
+          "type": "category",
+          "title": "护发",
+          "imgURL": "https://wicdn.xiaohongchun.com/xhc-plat/1498725923825_Mxf5hG8GhD.png",
+          "linkType": "LINE_POINT_SUB",
+          "linkParam": "",
+          "online_time": "",
+          "offline_time": ""
+        },
+        {
+          "id": "",
+          "desc": "",
+          "type": "category",
+          "title": "美发造型",
+          "imgURL": "https://wicdn.xiaohongchun.com/xhc-plat/1498725938020_M7e25r7r7m.png",
+          "linkType": "LINE_POINT_SUB",
+          "linkParam": "",
+          "online_time": "",
+          "offline_time": ""
+        },
+        {
+          "id": "",
+          "desc": "",
+          "type": "category",
+          "title": "沐浴用品",
+          "imgURL": "https://wicdn.xiaohongchun.com/xhc-plat/1498725855930_eDxdHp4A7a.png",
+          "linkType": "LINE_POINT_SUB",
+          "linkParam": "",
+          "online_time": "",
+          "offline_time": ""
+        },
+        {
+          "id": "",
+          "desc": "",
+          "type": "category",
+          "title": "身体乳",
+          "imgURL": "https://wicdn.xiaohongchun.com/xhc-plat/1498725865750_Rwd4iQ5pDF.png",
+          "linkType": "LINE_POINT_SUB",
+          "linkParam": "",
+          "online_time": "",
+          "offline_time": ""
+        }
+      ],
+      "moreIcon": "https://wicdn.xiaohongchun.com/xhc-plat/1499690569496_jKyaBHe2Ze.png",
+      "moreText": "",
+      "moduleStyle": "nothing",
+      "moduleTitle": "品牌推荐",
+      "moreLinkType": "topic",
+      "interfaceLink": "PIC_TXT",
+      "moreLinkParam": "1",
+      "moreTextDisplay": "true"
+    },
+    {
+      "type": "category",
+      "dataList": [
+        {
+          "id": "",
+          "desc": "",
+          "type": "category",
+          "title": "红葡萄酒",
+          "imgURL": "https://wicdn.xiaohongchun.com/xhc-plat/1498725791668_w8p6N7nR7r.png",
+          "linkType": "LINE_POINT_SUB",
+          "linkParam": "",
+          "online_time": "",
+          "offline_time": ""
+        },
+        {
+          "id": "",
+          "desc": "",
+          "type": "category",
+          "title": "白葡萄酒",
+          "imgURL": "https://wicdn.xiaohongchun.com/xhc-plat/1498725923825_Mxf5hG8GhD.png",
+          "linkType": "LINE_POINT_SUB",
+          "linkParam": "",
+          "online_time": "",
+          "offline_time": ""
+        },
+        {
+          "id": "",
+          "desc": "",
+          "type": "category",
+          "title": "桃红葡萄酒",
+          "imgURL": "https://wicdn.xiaohongchun.com/xhc-plat/1498725938020_M7e25r7r7m.png",
+          "linkType": "LINE_POINT_SUB",
+          "linkParam": "",
+          "online_time": "",
+          "offline_time": ""
+        },
+        {
+          "id": "",
+          "desc": "",
+          "type": "category",
+          "title": "起泡酒",
+          "imgURL": "https://wicdn.xiaohongchun.com/xhc-plat/1498725855930_eDxdHp4A7a.png",
+          "linkType": "LINE_POINT_SUB",
+          "linkParam": "",
+          "online_time": "",
+          "offline_time": ""
+        },
+        {
+          "id": "",
+          "desc": "",
+          "type": "category",
+          "title": "冰酒",
+          "imgURL": "https://wicdn.xiaohongchun.com/xhc-plat/1498725865750_Rwd4iQ5pDF.png",
+          "linkType": "LINE_POINT_SUB",
+          "linkParam": "",
+          "online_time": "",
+          "offline_time": ""
+        },
+        {
+          "id": "",
+          "desc": "",
+          "type": "category",
+          "title": "组合",
+          "imgURL": "https://wicdn.xiaohongchun.com/xhc-plat/1498725956484_HcjDzdG2YC.png",
+          "linkType": "LINE_POINT_SUB",
+          "linkParam": "",
+          "online_time": "",
+          "offline_time": ""
+        },
+        {
+          "id": "",
+          "desc": "",
+          "type": "category",
+          "title": "其他",
+          "imgURL": "https://wicdn.xiaohongchun.com/xhc-plat/1498725837093_xEnxhDJfQb.png",
+          "linkType": "LINE_POINT_SUB",
+          "linkParam": "",
+          "online_time": "",
+          "offline_time": ""
+        }
+      ],
+      "moreIcon": "https://wicdn.xiaohongchun.com/xhc-plat/1499690549966_xbr3ACA38e.png",
+      "moreText": "",
+      "moduleStyle": "nothing",
+      "moduleTitle": "葡萄酒",
+      "moreLinkType": "html",
+      "interfaceLink": "LINE_POINT_SUB",
+      "moreLinkParam": "2",
+      "moreTextDisplay": "true"
+    },
+    {
+      "type": "category",
+      "dataList": [
+        {
+          "id": "",
+          "desc": "",
+          "type": "category",
+          "title": "黑啤",
+          "imgURL": "https://wicdn.xiaohongchun.com/xhc-plat/1498727218594_HxTtD8jjiQ.png",
+          "linkType": "LINE_POINT",
+          "linkParam": "",
+          "online_time": "",
+          "offline_time": ""
+        },
+        {
+          "id": "",
+          "desc": "",
+          "type": "category",
+          "title": "黄啤",
+          "imgURL": "https://wicdn.xiaohongchun.com/xhc-plat/1498727240051_HNrWcnRCc2.png",
+          "linkType": "LINE_POINT",
+          "linkParam": "",
+          "online_time": "",
+          "offline_time": ""
+        },
+        {
+          "id": "",
+          "desc": "",
+          "type": "category",
+          "title": "白啤",
+          "imgURL": "https://wicdn.xiaohongchun.com/xhc-plat/1498727310173_ZsHyJ573nt.png",
+          "linkType": "LINE_POINT",
+          "linkParam": "",
+          "online_time": "",
+          "offline_time": ""
+        }
+      ],
+      "moreIcon": "https://wicdn.xiaohongchun.com/xhc-plat/1499690592572_6PcAjFFXEA.png",
+      "moreText": "",
+      "moduleStyle": "nothing",
+      "moduleTitle": "啤酒",
+      "moreLinkType": "userId",
+      "interfaceLink": "LINE_POINT",
+      "moreLinkParam": "3",
+      "moreTextDisplay": "true"
+    }
+  ]
+}

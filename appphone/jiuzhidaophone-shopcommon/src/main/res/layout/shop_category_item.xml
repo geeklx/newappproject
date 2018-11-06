@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <ImageView
+        android:layout_gravity="center"
+        android:src="@drawable/cate_list_normal_star"
+        android:id="@+id/iv_cate_icon"
+        android:layout_marginTop="@dimen/x14"
+        android:layout_width="@dimen/x51"
+        android:layout_height="@dimen/x51"/>
+
+    <!--<TextView-->
+        <!--android:id="@+id/tv_cate_title"-->
+        <!--style="@style/shop_cate_list_title"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textColor="@drawable/cate_list_title_text_selector"/>-->
+
+    <TextView
+        android:id="@+id/tv_cate_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/shop_cate_list_green"
+        android:textSize="@dimen/text_size_16"/>
+
+</LinearLayout>

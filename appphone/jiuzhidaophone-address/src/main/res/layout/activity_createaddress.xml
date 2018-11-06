@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="@drawable/devider_line"
+    android:dividerPadding="@dimen/x25"
+    android:orientation="vertical"
+    android:showDividers="middle">
+
+    <include layout="@layout/address_top_layout"></include>
+
+    <!--联系人-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout style="@style/crate_ll_childe">
+
+            <TextView
+                style="@style/create_text"
+                android:text="联系人" />
+
+            <EditText
+                android:singleLine="true"
+                android:ellipsize="middle"
+                android:id="@+id/et_person"
+                style="@style/create_editext"
+                android:hint="姓名" />
+        </LinearLayout>
+
+        <View
+            style="@style/view_line"
+            android:layout_marginLeft="@dimen/x195"
+            android:layout_marginRight="@dimen/x25"></View>
+
+        <RadioGroup
+            android:id="@+id/rg_sex_tag"
+            style="@style/crate_ll_childe"
+            android:layout_marginLeft="@dimen/x170"
+            android:orientation="horizontal">
+
+            <RadioButton
+                style="@style/create_address_radio"
+                android:text="先生" />
+
+            <RadioButton
+                style="@style/create_address_radio"
+                android:layout_marginLeft="@dimen/x15"
+                android:text="女士" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <!--电话-->
+    <LinearLayout style="@style/crate_parent_ll">
+
+        <TextView
+            style="@style/create_text"
+            android:text="电话" />
+
+        <EditText
+            android:maxLength="11"
+            android:inputType="number"
+            android:id="@+id/et_phone"
+            style="@style/create_editext"
+            android:hint="手机号码" />
+
+        <TextView
+            android:id="@+id/tv_create_mail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/x25"
+            android:text=" + 通讯录"
+            android:textColor="@color/search_blue"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+
+    <!--地址-->
+    <LinearLayout
+        android:id="@+id/ll_create_location"
+        style="@style/crate_parent_ll">
+
+        <TextView
+            style="@style/create_text"
+            android:text="地址" />
+
+
+        <EditText
+            android:id="@+id/et_address"
+            style="@style/create_editext"
+            android:hint="选择收货地址" />
+
+        <ImageView
+            android:padding="@dimen/x30"
+            android:id="@+id/iv_arrow"
+            android:layout_marginRight="@dimen/x25"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/icon_arrow"
+            android:scaleType="centerCrop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <!--门牌号-->
+    <LinearLayout style="@style/crate_parent_ll">
+
+        <TextView
+            style="@style/create_text"
+            android:text="门牌号" />
+
+        <EditText
+            android:id="@+id/et_door_num"
+            style="@style/create_editext"
+            android:hint="门牌号" />
+    </LinearLayout>
+
+
+    <!--标签-->
+
+    <LinearLayout style="@style/crate_parent_ll">
+
+        <TextView
+            style="@style/create_text"
+            android:text="标签" />
+
+        <RadioGroup
+            android:id="@+id/rg_location_tag"
+            style="@style/crate_ll_childe"
+            android:layout_marginLeft="@dimen/x25"
+            android:orientation="horizontal">
+
+            <RadioButton
+                style="@style/create_address_radio"
+                android:text="家" />
+
+            <RadioButton
+                style="@style/create_address_radio"
+                android:layout_marginLeft="@dimen/x15"
+                android:text="公司" />
+
+            <RadioButton
+                style="@style/create_address_radio"
+                android:layout_marginLeft="@dimen/x15"
+                android:text="学校" />
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="@dimen/y100"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/address_save"
+        android:paddingLeft="@dimen/x200"
+        android:paddingRight="@dimen/x200"
+        android:text="保存"
+        android:textColor="@color/selector_splash_txt"
+        android:textSize="16sp" />
+
+</LinearLayout>

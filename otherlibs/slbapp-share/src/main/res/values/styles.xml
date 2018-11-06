@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme. -->
+    <style name="ShareAppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/view_line_color</item>
+        <item name="colorPrimaryDark">@color/view_line_color</item>
+        <item name="colorAccent">@color/view_line_color</item>
+
+        <!--phone-->
+        <item name="windowNoTitle">true</item>
+        <!--pingban-->
+        <!--<item name="android:windowNoTitle">true</item>-->
+        <item name="android:windowActionBar">false</item>
+    </style>
+    <style name="item" parent="ShareAppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:layout_marginRight">0px</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">#ffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="Transparentsss" parent="ShareAppTheme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <!--<item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>-->
+    </style>
+
+</resources>

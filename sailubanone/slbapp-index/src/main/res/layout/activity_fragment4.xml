@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_EDEBE9"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y400"
+            android:background="@drawable/img00"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.haier.cellarette.baselibrary.widget.CustomImageView
+                android:id="@+id/iv_center"
+                android:layout_width="@dimen/x160"
+                android:layout_height="@dimen/x160"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/y50"
+                app:src="@drawable/ic_zhaoliying"
+                app:type="circle" />
+
+
+            <TextView
+                android:id="@+id/tv1"
+                style="@style/logincommtextview"
+                android:layout_marginTop="10dp"
+                android:text="访客登录"
+                android:textColor="@color/black_000" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slb_my_btn_comm"
+            android:padding="10dp">
+
+            <TextView
+                style="@style/logincommtextview"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/slb_setting"
+                android:drawablePadding="10dp"
+                android:text="设置"
+                android:textColor="@color/black_000"
+                android:textSize="@dimen/text_size_20" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/slb_back" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/slb_my_btn_comm"
+            android:padding="10dp">
+
+            <TextView
+                style="@style/logincommtextview"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/slb_fankui"
+                android:drawablePadding="10dp"
+                android:text="反馈"
+                android:textColor="@color/black_000"
+                android:textSize="@dimen/text_size_20" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/slb_back" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/slb_my_btn_comm"
+            android:padding="10dp">
+
+            <TextView
+                style="@style/logincommtextview"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/slb_about"
+                android:drawablePadding="10dp"
+                android:text="关于"
+                android:textColor="@color/black_000"
+                android:textSize="@dimen/text_size_20" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/slb_back" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_sure"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y100"
+            android:layout_marginLeft="@dimen/x40"
+            android:layout_marginRight="@dimen/x40"
+            android:background="@drawable/slb_my_btn_sure"
+            android:text="退出登录"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/text_size_16" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y100"
+            android:layout_marginLeft="@dimen/x40"
+            android:layout_marginTop="@dimen/x20"
+            android:layout_marginRight="@dimen/x40"
+            android:layout_marginBottom="@dimen/x40"
+            android:background="@drawable/slb_my_btn_cancel"
+            android:text="关闭应用"
+            android:textSize="@dimen/text_size_16" />
+
+    </LinearLayout>
+</LinearLayout>
+

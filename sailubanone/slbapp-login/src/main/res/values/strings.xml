@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">slbapp-login</string>
+
+
+    <string name="yhzc_tip1">4&#8211;15位，由中文/字母/数字组成</string>
+    <string name="yhzc_tip2">8&#8211;32位，由字母+数字组成</string>
+    <string name="yhzc_tip3">再次输入密码</string>
+    <string name="yhzc_tip4">请输入手机号(大陆)或邮箱</string>
+    <string name="yhzc_tip41">请输入验证码</string>
+    <string name="yhzc_tip5">获取验证码</string>
+    <string name="yhzc_tip50">重新获取(%1$d秒)</string>
+    <string name="yhzc_tip501">%1$d秒</string>
+    <string name="yhzc_tip51">重新获取</string>
+    <string name="yhzc_tip6">用&#160;&#160;户&#160;&#160;名</string>
+    <string name="yhzc_tip7">密&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;码</string>
+    <string name="yhzc_tip8">确认密码</string>
+    <string name="yhzc_tip9">用于找回密码等</string>
+    <string name="yhzc_tip10">验证码已发送至：%1$s</string>
+    <string name="yhzc_tip11">请重置您的密码，并妥善保管</string>
+
+
+</resources>

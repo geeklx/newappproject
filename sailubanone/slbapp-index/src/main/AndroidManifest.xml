@@ -1,0 +1,75 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.slbappindex">
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+        <activity
+            android:name="com.example.slbappindex.IndexMainActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait">
+            <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.MAIN" />-->
+            <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+            <intent-filter>
+                <action android:name="hs.act.slbapp.index" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.example.slbappindex.welcome.WelComeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeSplash">
+
+            <intent-filter>
+                <action android:name="hs.act.slbapp.welcome" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.example.slbappindex.fragment.fragment2.utils.DownloadServiceMp4"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="hs.act.slbapp.DownloadServiceMp4" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".fragment.activity4.Fragment4SettingActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="hs.act.slbapp.Fragment4SettingActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".fragment.activity4.Fragment4AboutActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="hs.act.slbapp.Fragment4AboutActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".fragment.activity4.Fragment4FankuiActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:screenOrientation="portrait">
+            <!--android:windowSoftInputMode="adjustResize|stateHidden"-->
+            <intent-filter>
+                <action android:name="hs.act.slbapp.Fragment4FankuiActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+    </application>
+</manifest>

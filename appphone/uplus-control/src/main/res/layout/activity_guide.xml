@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <include
+        android:id="@+id/ly_top"
+        layout="@layout/top_layout"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ly_top">
+    <TextView
+        android:id="@+id/tv_guide_notice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#3c3c3c"
+        android:textSize="16sp"
+        android:text="长按“灯“按键，约5秒后温度显示框进入”F“模式，松开按键"/>
+
+    <ImageView
+        android:id="@+id/iv_cellarette"
+        android:layout_width="200dp"
+        android:layout_height="320dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/jc66_wifi"/>
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="237dp"
+        android:layout_height="38dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/btn_color"
+        android:text="下一步"
+        android:textColor="@color/color_white"
+        android:textSize="16sp" />
+    </RelativeLayout>
+</RelativeLayout>

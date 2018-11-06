@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.haier.cellarette.baselibrary.scrollview.ScrollBottomScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/y150">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.haier.cellarette.baselibrary.widget.CircleImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_zhaoliying" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/zly_tips" />
+
+        </LinearLayout>
+    </com.haier.cellarette.baselibrary.scrollview.ScrollBottomScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/x40"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/x10"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:padding="@dimen/x30"
+            android:text="取消"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@id/tv2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:padding="@dimen/x30"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            tools:visibility="visible" />
+    </LinearLayout>
+</RelativeLayout>

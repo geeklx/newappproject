@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="topLayout">
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:paddingTop">@dimen/x40</item>
+        <item name="android:textColor">#FFEFEFEF</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="create_text">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">@dimen/x120</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black_000</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="view_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:layout_marginLeft">@dimen/x20</item>
+        <item name="android:background">#DCDCDC</item>
+    </style>
+
+
+    <style name="crate_ll_childe">
+        <item name="android:background">@color/white</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/y20</item>
+        <item name="android:paddingLeft">@dimen/x25</item>
+        <item name="android:layout_marginTop">@dimen/y20</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="crate_parent_ll">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/y100</item>
+        <item name="android:paddingLeft">@dimen/x25</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="create_editext">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/x50</item>
+        <item name="android:background">@null</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="create_address_radio">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/bt_txt_selector</item>
+        <item name="android:button">@null</item>
+    </style>
+</resources>

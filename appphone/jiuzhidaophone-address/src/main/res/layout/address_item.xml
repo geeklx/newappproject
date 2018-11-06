@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/y18"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/x25">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x18"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/tv_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black_000"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/tv_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:background="@drawable/bg_location"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_address2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black_000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_person"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y7"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="@dimen/x30"
+            android:layout_height="@dimen/x30"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/x25"
+            android:layout_marginTop="@dimen/y15"
+            android:background="@color/b3"
+            android:src="@mipmap/edit_icon" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="@dimen/x25"
+        android:background="#DCDCDC"></View>
+</LinearLayout>
+

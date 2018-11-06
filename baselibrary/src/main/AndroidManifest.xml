@@ -1,0 +1,381 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.haier.cellarette.baselibrary">
+
+    <uses-permission android:name="au.com.example.READ_CONTENT" />
+    <uses-permission android:name="au.com.example.WRITE_CONTENT" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--允许读取网络状态-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!--允许读取wifi网络状态-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application>
+
+        <receiver android:name=".networkview.NetworkChangeListener" />
+        <receiver android:name=".networkview.NetworkConnectChangedReceiver" />
+
+        <activity
+            android:name=".likebutton.LikeButtonActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="hs.act.phone.likebutton" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".handleralluse.handler"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="hs.act.phone.handler" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".handleralluse.handler1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".handleralluse.handler2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".handleralluse.handler3"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".handleralluse.handler4"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".handleralluse.handler5"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".handleralluse.handler6"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".handleralluse.handler7.handler7"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".handleralluse.handler8.handler8"
+            android:screenOrientation="portrait" />
+
+        <service android:name="com.haier.cellarette.baselibrary.handleralluse.handler8.DownloadService" />
+
+        <activity
+            android:name=".emptyview.EmptyViewMainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="hs.act.phone.EmptyViewMainActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".recycleviewgallery.activitys.gallerybigcards.ShopActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="hs.act.phone.gallerybigcards" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".recycleviewgallery.activitys.verticalscroll.GalleryActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="hs.act.phone.verticalscroll" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".recycleviewgallery.activitys.weathersmallcards.WeatherActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="hs.act.phone.weathersmallcards" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".recycleviewgallery.RecycleViewGalleryActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="hs.act.phone.RecycleViewGalleryActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".networkview.NetEmptyViewMainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="hs.act.phone.networkview" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name=".recycleviewmultitype.RecycleViewMainActivity">
+            <intent-filter>
+                <action android:name="com.RecycleViewMainActivity.act" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".recycleviewmultitype.activitys.RecDemo1Activity">
+            <intent-filter>
+                <action android:name="com.demo1.act" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".recycleviewmultitype.activitys.RecDemo2Activity">
+            <intent-filter>
+                <action android:name="com.demo2.act" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".recycleviewmultitype.activitys.RecDemo3Activity">
+            <intent-filter>
+                <action android:name="com.demo3.act" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".recycleviewmultitype.activitys.RecDemo4Activity">
+            <intent-filter>
+                <action android:name="com.demo4.act" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".recycleviewmultitype.activitys.RecDemo5Activity">
+            <intent-filter>
+                <action android:name="com.demo5.act" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".recycleviewmultitype.activitys.RecDemo6Activity">
+            <intent-filter>
+                <action android:name="com.demo6.act" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".recycleviewmultitype.activitys.RecDemo7Activity">
+            <intent-filter>
+                <action android:name="com.demo7.act" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".recycleviewmultitype.activitys.MoreApisPlayground">
+            <intent-filter>
+                <action android:name="com.demo8.act" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".caranimation.CarAct">
+            <intent-filter>
+                <action android:name="com.caranimation.act" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".recycleviewalluses.BaeRecycleViewActivity">
+            <intent-filter>
+                <action android:name="com.recycleviewalluses.act" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".recycleviewalluses.demo1baseadpterhelp.BaseRecActDemo1">
+            <intent-filter>
+                <action android:name="com.BaseRecActDemo11.act" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".recycleviewalluses.demo2baseadpterhelp.BaseRecActDemo2">
+            <intent-filter>
+                <action android:name="com.BaseRecActDemo22.act" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".recycleviewalluses.demo3baseadpterhelp.BaseRecActDemo3">
+            <intent-filter>
+                <action android:name="com.BaseRecActDemo33.act" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".recycleviewalluses.demo4baseadpterhelp.BaseRecActDemo4">
+            <intent-filter>
+                <action android:name="com.BaseRecActDemo44.act" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".recycleviewalluses.demo4baseadpterhelp.hunhe.BaseRecActDemo41">
+            <intent-filter>
+                <action android:name="com.BaseRecActDemo41.act" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".recycleviewalluses.demo4baseadpterhelp.second.BaseRecActDemo42">
+            <intent-filter>
+                <action android:name="com.BaseRecActDemo42.act" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".recycleviewalluses.demo5baseadpterhelp.BaseRecActDemo5">
+            <intent-filter>
+                <action android:name="com.BaseRecActDemo55.act" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".recycleviewalluses.demo6baseadpterhelp.BaseRecActDemo6">
+            <intent-filter>
+                <action android:name="com.BaseRecActDemo66.act" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".recycleviewalluses.demo7baseadpterhelp.BaseRecActDemo7">
+            <intent-filter>
+                <action android:name="com.BaseRecActDemo77.act" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".recycleviewalluses.demo8baseadpterhelp.BaseRecActDemo8">
+            <intent-filter>
+                <action android:name="com.BaseRecActDemo88.act" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".recycleviewalluses.demo9baseadpterhelp.BaseRecActDemo9">
+            <intent-filter>
+                <action android:name="com.BaseRecActDemo99.act" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".zuni.DemoZuniScrollViewActivity">
+            <intent-filter>
+                <action android:name="com.ZuniScrollViewAct.act" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ringutil.RingActivity"
+            android:theme="@style/Theme.Transparent">
+            <intent-filter>
+                <action android:name="hs.act.phone.RingActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name=".changelanguage.ChangeLanActivity">
+            <intent-filter>
+                <action android:name="hs.act.phone.changelanguage" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".scrollview.ScrollViewAct">
+            <intent-filter>
+                <action android:name="hs.act.phone.ScrollViewAct" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".anroomcrash.ANROOMCrashActivity">
+            <intent-filter>
+                <action android:name="hs.act.phone.anroomcrash" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".musicutils.MusicActivity">
+            <intent-filter>
+                <action android:name="hs.act.phone.MusicActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name=".expandableview.ExpandableAct">
+            <intent-filter>
+                <action android:name="hs.act.phone.expandableview" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".expandableview.extextview.TextViewAct">
+            <intent-filter>
+                <action android:name="hs.act.phone.TextViewAct" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".expandableview.eximageview.ImageViewAct">
+            <intent-filter>
+                <action android:name="hs.act.phone.ImageViewAct" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".assetsfitandroid.AssetsMainActivity">
+            <intent-filter>
+                <action android:name="hs.act.AssetsMainActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".assetsfitandroid.fileassets.FileAssetsActivity">
+            <intent-filter>
+                <action android:name="hs.act.FileAssetsActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".assetsfitandroid.fileandroid.FitAndroidActivity">
+            <intent-filter>
+                <action android:name="hs.act.FitAndroidActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".shoppingcar.ShoppingCarActivity">
+            <intent-filter>
+                <action android:name="hs.act.ShoppingCarActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+    </application>
+
+</manifest>

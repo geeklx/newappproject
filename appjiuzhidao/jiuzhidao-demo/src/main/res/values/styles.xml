@@ -1,0 +1,18 @@
+<resources>
+
+
+    <style name="StartTheme" parent="Theme.AppCompat.Light.DarkActionBar">>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/white</item>
+
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@drawable/splash_background</item>
+    </style>
+
+    <style name="MyEditText">
+        <item name="colorControlNormal">@android:color/white</item>
+        <item name="colorControlActivated">@android:color/white</item>
+    </style>
+</resources>

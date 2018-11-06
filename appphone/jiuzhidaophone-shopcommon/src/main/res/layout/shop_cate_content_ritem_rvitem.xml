@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+          android:layout_width="wrap_content"
+          android:textColor="#A3A3A3"
+          android:text="干红"
+          android:layout_marginRight="@dimen/x120"
+          android:textSize="@dimen/text_size_13"
+          android:id="@+id/tv_cate_sub_content_name"
+          android:layout_height="wrap_content">
+
+</TextView>

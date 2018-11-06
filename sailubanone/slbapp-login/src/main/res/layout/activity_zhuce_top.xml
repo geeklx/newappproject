@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/y30"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_zh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/x20"
+            android:text="@string/yhzc_tip6"
+            android:textColor="@color/gray222328"
+            android:textSize="@dimen/text_size_18" />
+
+        <EditText
+            android:id="@+id/edt1"
+            style="@style/logincontentedit"
+            android:layout_width="match_parent"
+            android:layout_toRightOf="@+id/tv_zh"
+            android:hint="@string/yhzc_tip1"
+            android:inputType="textVisiblePassword"
+            android:maxLength="11"
+            android:padding="@dimen/x10"
+            android:textSize="@dimen/text_size_12" />
+
+    </RelativeLayout>
+
+    <View
+        style="@style/logincommviewline"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_mm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/yhzc_tip7"
+            android:textColor="@color/gray222328"
+            android:textSize="@dimen/text_size_18" />
+
+        <EditText
+            android:id="@+id/edt2"
+            style="@style/logincontentedit"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:hint="@string/yhzc_tip2"
+            android:inputType="textPassword"
+            android:maxLength="11"
+            android:padding="@dimen/x10"
+            android:textSize="@dimen/text_size_12" />
+
+        <ImageView
+            android:id="@+id/iv_eyes1"
+            android:layout_width="@dimen/x60"
+            android:layout_height="@dimen/x60"
+            android:layout_marginRight="@dimen/x20"
+            android:src="@drawable/eyes_icon_close" />
+
+    </LinearLayout>
+
+    <View
+        style="@style/logincommviewline"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_qrmm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/yhzc_tip8"
+            android:textColor="@color/gray222328"
+            android:textSize="@dimen/text_size_18" />
+
+        <EditText
+            android:id="@+id/edt3"
+            style="@style/logincontentedit"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:hint="@string/yhzc_tip3"
+            android:inputType="textPassword"
+            android:maxLength="11"
+            android:padding="@dimen/x10"
+            android:textSize="@dimen/text_size_12" />
+
+        <ImageView
+            android:id="@+id/iv_eyes2"
+            android:layout_width="@dimen/x60"
+            android:layout_height="@dimen/x60"
+            android:layout_marginRight="@dimen/x20"
+            android:src="@drawable/eyes_icon_close" />
+    </LinearLayout>
+</LinearLayout>

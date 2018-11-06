@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.haier.cellarette.baselibrary.zothers.AutoHideInputMethodFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_F9F7F9">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/activity_login_top" />
+
+        <TextView
+            android:id="@+id/tv0"
+            style="@style/logincommtextview"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginTop="@dimen/y20"
+            android:padding="@dimen/x20"
+            android:text="重置成功"
+            android:textColor="@color/red" />
+
+        <TextView
+            android:id="@+id/tv1"
+            style="@style/logincommtextview"
+            android:layout_marginLeft="@dimen/x20"
+            android:padding="@dimen/x20"
+            android:text="您的用户名为:"
+            android:textColor="@color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x40"
+            android:layout_marginRight="@dimen/x40"
+            android:background="@drawable/background_wihte"
+            android:orientation="horizontal"
+            android:padding="@dimen/x20">
+
+            <EditText
+                android:id="@+id/edt1"
+                style="@style/logincontentedit"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:hint="@string/yhzc_tip11"
+                android:inputType="textVisiblePassword"
+                android:maxLength="11"
+                android:padding="@dimen/x10"
+                android:textSize="@dimen/text_size_16" />
+
+
+            <ImageView
+                android:id="@+id/iv_eyes1"
+                android:layout_width="@dimen/x60"
+                android:layout_height="@dimen/x60"
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_marginRight="@dimen/x10"
+                android:src="@drawable/eyes_icon_close" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_sure"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y100"
+            android:layout_marginLeft="@dimen/x40"
+            android:layout_marginRight="@dimen/x40"
+            android:layout_marginTop="@dimen/x40"
+            android:background="@drawable/btncomm"
+            android:text="确定重置"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/text_size_16" />
+
+    </LinearLayout>
+
+</com.haier.cellarette.baselibrary.zothers.AutoHideInputMethodFrameLayout>

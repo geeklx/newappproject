@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.haier.cellarette.baselibrary.zothers.AutoHideInputMethodFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_F9F7F9">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/activity_login_top" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x40"
+            android:layout_marginRight="@dimen/x40"
+            android:layout_marginTop="@dimen/y60"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="@dimen/x100"
+                android:layout_height="match_parent"
+                android:background="@color/color_11B5AF"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/wjmm_tel" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_marginRight="@dimen/x10"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:padding="@dimen/x20">
+
+                <EditText
+                    android:id="@+id/edt1"
+                    style="@style/logincontentedit"
+                    android:hint="@string/yhzc_tip4"
+                    android:inputType="textVisiblePassword"
+                    android:maxLength="11"
+                    android:padding="@dimen/x10"
+                    android:textSize="@dimen/text_size_18" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x40"
+            android:layout_marginRight="@dimen/x40"
+            android:layout_marginTop="@dimen/y20"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:padding="@dimen/x20">
+
+                <EditText
+                    android:id="@+id/edt2"
+                    style="@style/logincontentedit"
+                    android:hint="@string/yhzc_tip41"
+                    android:inputType="textVisiblePassword"
+                    android:maxLength="11"
+                    android:padding="@dimen/x10"
+                    android:textSize="@dimen/text_size_18" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_hqyzm"
+                android:layout_width="@dimen/x200"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_sure"
+                android:text="@string/yhzc_tip5"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_12" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btn_sure"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y100"
+            android:layout_marginLeft="@dimen/x40"
+            android:layout_marginRight="@dimen/x40"
+            android:layout_marginTop="@dimen/x40"
+            android:background="@drawable/btncomm"
+            android:text="验证"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/text_size_16" />
+
+    </LinearLayout>
+
+</com.haier.cellarette.baselibrary.zothers.AutoHideInputMethodFrameLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DevInfor>
+
+    <!-- 如果不需要支持某平台，可缺省该平台的配置-->
+    <!-- 各个平台的KEY仅供DEMO演示，开发者要集成发布需要改成自己的KEY-->
+    <!-- 如果不需要支持某平台，可缺省该平台的配置-->
+
+    <SinaWeibo
+        AppKey="3745723680"
+        AppSecret="398dabacd7c002cb9271607df068ea53"
+        RedirectUrl="https://www.jiguang.cn"/>
+
+    <QQ
+        AppId="1106011004"
+        AppKey="YIbPvONmBQBZUGaN"/>
+
+    <Wechat
+        AppId="wxa3fa50c49fcd271c"
+        AppSecret="18ba7ba86f2c098bbe67da61f8d7b278"/>
+
+    <Facebook
+        AppId="1847959632183996"
+        AppName="JShareDemo"
+    />
+
+    <Twitter
+        ConsumerKey="fCm4SUcgYI1wUACGxB2erX5pL"
+        ConsumerSecret="NAhzwYCgm15FBILWqXYDKxpryiuDlEQWZ5YERnO1D89VBtZO6q"
+        CallbackUrl="https://www.jiguang.cn/"
+    />
+
+    <JChatPro
+        auth="1847959632183996"
+    />
+
+
+</DevInfor>

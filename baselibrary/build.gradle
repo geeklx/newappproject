@@ -1,0 +1,76 @@
+apply plugin: 'com.android.library'
+def config = rootProject.ext //配置
+def librarys = rootProject.ext.dependencies //依赖
+android {
+    compileSdkVersion config.compileSdkVersion
+    buildToolsVersion config.buildToolsVersion
+    defaultConfig {
+        multiDexEnabled true
+        minSdkVersion config.minSdkVersion
+        targetSdkVersion config.targetSdkVersion
+        versionCode config.versionCode
+        versionName config.versionName
+        multiDexEnabled true
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    dataBinding {
+        enabled = true
+    }
+}
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    api librarys.design
+    api librarys.appcompatV7
+    api librarys.supportannotations
+    api librarys.recyclerviewv7
+    api librarys.cardviewv7
+    api librarys.nineoldandroids
+    api librarys.zxing
+    api librarys.fastJson
+    api librarys.gsonJson
+
+    api(name: 'libutils', ext: 'aar')
+//    api(name: 'libglide37', ext: 'aar')
+    api(name: 'libwebview', ext: 'aar')
+    api(name: 'librararyforfileprovdider', ext: 'aar')
+    api(name: 'libmvp', ext: 'aar')
+    api(name: 'libglin', ext: 'aar')
+    api project(':commonlibs:libretrofit')
+//    api(name: 'libretrofit', ext: 'aar')
+
+
+//    implementation librarys.glide37
+
+    // updateapk
+    api project(':commonlibs:librararyforfileprovdider')
+    // three fang likebutton
+    api 'com.mikepenz:iconics-core:2.9.1@aar'
+    api 'com.mikepenz:community-material-typeface:1.8.36.1@aar'
+    // recycleviewgallery
+    api 'com.yarolegovich:mp:1.0.9'
+    // recycleview recycleviewmultitype
+    api 'me.drakeet.multitype:multitype:3.4.4'
+    // recycleviewalluses
+    api 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.40'
+    api 'com.jaredrummler:material-spinner:1.2.5'
+    api 'com.kyleduo.switchbutton:library:2.0.0'
+    // expandableview
+    api 'com.drawthink:expandable-recyclerview:0.0.3'
+    // assetsfitandroid
+    api 'com.blankj:utilcode:1.21.2'
+    // AutoEx
+    api 'com.github.BolexLiu.AutoEx:AutoEx-Lib-No-Op:v1.0.8'
+    // jiaozi
+    api 'cn.jzvd:jiaozivideoplayer:6.3.1'
+    // https://github.com/HuanHaiLiuXin/CoolViewPager
+    api 'com.github.HuanHaiLiuXin:CoolViewPager:v1.0.0'
+//    implementation project(':commonlibs:geekutilslibrary')
+//    implementation(name: 'libutils', ext: 'aar')
+//    implementation files('src/main/libs/MobCommons-2018.0418.1102.jar')
+}

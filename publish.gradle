@@ -1,0 +1,262 @@
+/**
+ * gradlew publish \n          打全量包
+ * gradlew publishDefault \n   打一个包
+ * gradlew chVar \n            同步aar
+ */
+apply from: './publish_config.gradle'
+
+ext {
+    gradles = '/build.gradle'
+    rep = "/**rep*/"
+    aarPat = ".*implementation\\s*\\(name:\\s*[\"']\\s*([a-zA-Z0-9-]+?)_.*\\).*"
+    supportReplacePat = "\\/\\*\\*support:\\s*(.*)\\s*\\*\\/"
+    applicationIdPat = /\s*applicationId\s*['|"](.*)['|"]\s*/
+    //                  \s*applicationId\s*['|"](.*)['|"]\s*
+    garbageName = "BXN"
+
+}
+
+tasks.create(name: 'publish') << {
+    for (variant in variants) {
+        start variant
+    }
+
+    println "All finished, restore compile to default"
+    repFile variants[defaultVariantIndex]
+}
+
+tasks.create(name: 'publishDefault') << {
+    start variants[defaultVariantIndex]
+}
+
+tasks.create(name: 'chVar') << {
+    repFile variants[defaultVariantIndex]
+}
+
+def start(String variant) {
+    repFile variant
+
+    def gradlewCmd = isWindows() ? "./gradlew.bat" : "./gradlew"
+    def proc = Runtime.getRuntime().exec "${gradlewCmd} assembleDebug"
+    new StreamPrinter(proc.getInputStream(), "INFO").start()
+    new StreamPrinter(proc.getErrorStream(), "ERROR").start()
+    proc.waitFor()
+
+    rename "-debug", variant
+
+    println "--------SUCCESS--------"
+}
+
+def repFile(String v) {
+    repFile "./${gradles}", v
+    for (app in apps) {
+        def path = "./${app}/"
+        def current = file(path)
+        current.eachFile { file ->
+            if (file.isDirectory()) {
+                repFile file.path + gradles, v
+            }
+        }
+    }
+}
+
+def repFile(String f, String variant) {
+    def file = file(f)
+    if (!file.exists()) {
+        return
+    }
+    def txt = file.text
+
+    def lines = txt.readLines()
+    def size = lines.size()
+
+    for (def i = 0; i < size; i++) {
+        def line = lines[i]
+
+        def rep = repAAR line, variant
+        if (rep != "") {
+            txt = txt.replace line, rep
+        }
+
+        def matched = matchSupport(line, variant)
+        if (matched != 0 && i + 1 < size) {
+            def nextLine = lines[i + 1]
+            if (matched == 1) {
+                if (!nextLine.trim().startsWith("//")) {
+                    txt = txt.replace nextLine, "//" + nextLine
+                }
+            } else if (matched == 2) {
+                if (nextLine.trim().startsWith("//")) {
+                    txt = txt.replace nextLine, nextLine.replaceFirst("//", "")
+                }
+            }
+        }
+    }
+
+    file.write txt
+}
+
+/** return 0 no matched,
+ *  1 matched but not contains current variant,
+ *  2 matched and contains current variant*/
+def matchSupport(String line, String variant) {
+    def pattern = java.util.regex.Pattern.compile supportReplacePat
+    def matcher = pattern.matcher line
+    if (matcher.find()) {
+        def vs = matcher.group 1
+        def vsArray = vs.split ","
+        if (inArray(variant, vsArray)) {
+            return 2
+        }
+
+        return 1
+    }
+
+    return 0
+}
+
+def repAAR(String line, String variant) {
+    if (!line.trim().startsWith(rep)) {
+        return ""
+    }
+
+    def pattern = java.util.regex.Pattern.compile aarPat
+    def matcher = pattern.matcher line
+    if (matcher.find()) {
+        def libName = matcher.group 1
+        return "    /**rep*/implementation (name:'${libName}_${variantMapping variant.toLowerCase()}', ext:'aar')"
+    }
+
+    return ""
+}
+
+def rename(String oldSuffix, String variant) {
+    def roots = project.getSubprojects()
+    println "--geek--" + roots
+    for (item in roots) {
+        if (!projectInApps(item.getName())) {
+            continue
+        }
+
+        def children = item.getSubprojects()
+        if (children.isEmpty()) {
+            continue
+        }
+
+        for (module in children) {
+            def lineList = module.getBuildFile().readLines()
+            if (lineList.get(0).contains("com.android.application")) {
+                def oldName = module.getName() + oldSuffix
+                def newName = getAppName(module.buildFile, variant)
+                println "--geek--" + "---oldName--" + oldName + "--newName--" + newName
+                def path = module.getBuildDir().getPath()
+                println "--geek--" + path
+                def apk = file("${path}/outputs/apk/debug/${oldName}.apk")
+                def renameApk = file("${path}/outputs/apk/debug/${newName}.apk")
+                if (apk.exists()) {
+                    if (renameApk.exists()) {
+                        renameApk.delete()
+                    }
+
+                    println "--geek--" + "rename ${apk.getName()} to ${renameApk.getName()}"
+
+                    apk.renameTo renameApk
+                }
+            }
+        }
+    }
+}
+
+def getAppName2(File buildFile, String variant) {
+    def appId = buildFile.filterLine { it =~ /^\s*applicationId/ }
+//    def appId = buildFile.filterLine { it =~ /applicationId/}
+    def pattern = java.util.regex.Pattern.compile applicationIdPat
+    def matcher = pattern.matcher appId.toString()
+    def apkName = ""
+    println "--geek-appId-" + appId.toString()
+    println "--geek-pattern-" + pattern
+    println "--geek-matcher-" + matcher
+    if (matcher.find()) {
+        def applicationId = matcher.group 1
+        def array = applicationId.split "\\."
+        apkName = array[array.length - 1]
+    }
+    println "--geek--" + apkName.toUpperCase() + apkNameMapping(variant)
+    return apkName.toUpperCase() + apkNameMapping(variant)
+}
+
+def getAppName(File buildFile, String variant) {
+    def appId = buildFile.filterLine { it =~ /^\s*applicationId/ }
+    def pattern = java.util.regex.Pattern.compile applicationIdPat
+    def matcher = pattern.matcher appId.toString()
+    def apkName = ""
+    if (matcher.find()) {
+        def applicationId = matcher.group 1
+        def array = applicationId.split "\\."
+        apkName = array[array.length - 1]
+    }
+    return apkName.toUpperCase() + apkNameMapping(variant)
+}
+
+def projectInApps(String name) {
+    for (app in apps) {
+        if (name.equals(app)) {
+            return true
+        }
+    }
+    return false
+}
+
+def isWindows() {
+    def osName = System.getProperty("os.name").toLowerCase()
+    def result = osName.startsWith "windows"
+    return result
+}
+
+def inArray(String str, String[] array) {
+    for (item in array) {
+        if (item.trim().equals(str)) {
+            return true
+        }
+    }
+
+    return false
+}
+
+class StreamPrinter extends Thread {
+    private InputStream inputStream
+    private String type
+
+    StreamPrinter(InputStream inputStream, String type) {
+        this.inputStream = inputStream
+        this.type = type
+    }
+
+    void run() {
+        BufferedReader br
+        try {
+            InputStreamReader inputStreamReader = new InputStreamReader(inputStream)
+            br = new BufferedReader(inputStreamReader)
+            String line = null
+            while ((line = br.readLine()) != null) {
+                println type + " > " + line
+
+                if (line.toLowerCase().contains("build failed")) {
+                    println "exit..."
+                    System.exit 1
+                }
+
+            }
+        } catch (IOException e) {
+            e.printStackTrace()
+        } finally {
+            if (br != null) {
+                try {
+                    br.close()
+                } catch (Exception e2) {
+                    e2.printStackTrace()
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,87 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.haier.pay">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.NFC" />
+
+    <uses-feature android:name="android.hardware.nfc.hce" />
+    <uses-permission android:name="org.simalliance.openmobileapi.SMARTCARD" />
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+        <!--<activity android:name=".zfb.AliPayActivity">-->
+        <!--<intent-filter>-->
+        <!--<action android:name="hs.act.phone.AliPayActivity" />-->
+        <!--<category android:name="android.intent.category.DEFAULT" />-->
+        <!--</intent-filter>-->
+        <!--</activity>-->
+        <!--<activity android:name=".wx.WxPayActivity">-->
+        <!--<intent-filter>-->
+        <!--<action android:name="hs.act.phone.WxPayActivity" />-->
+        <!--<category android:name="android.intent.category.DEFAULT" />-->
+        <!--</intent-filter>-->
+        <!--</activity>-->
+        <!-- alipay sdk begin -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden"></activity>
+        <activity
+            android:name="com.alipay.sdk.app.H5AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden"></activity>
+
+        <!-- alipay sdk end -->
+        <activity android:name=".demoact"/>
+
+        <!--wx start-->
+        <activity
+            android:name=".wx.wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".wx.wxapi.WXEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop" />
+
+        <!--end-->
+
+        <activity
+            android:name=".PayActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.Transparent">
+            <intent-filter>
+                <action android:name="hs.act.phone.PayActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <!--yinlian-->
+        <activity
+            android:name="com.unionpay.uppay.PayActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:excludeFromRecents="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name="com.unionpay.UPPayWapActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+    </application>
+</manifest>

@@ -1,0 +1,33 @@
+apply plugin: 'com.android.library'
+def config = rootProject.ext //配置
+def librarys = rootProject.ext.dependencies //依赖
+android {
+    compileSdkVersion config.compileSdkVersion
+    buildToolsVersion config.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion config.minSdkVersion
+        targetSdkVersion config.targetSdkVersion
+        versionCode config.versionCode
+        versionName config.versionName
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation librarys.design
+    implementation librarys.appcompatV7
+    implementation librarys.supportannotations
+    implementation librarys.recyclerviewv7
+    implementation librarys.cardviewv7
+    // glide
+    implementation librarys.glide37
+    implementation librarys.glide37okhttp3
+
+    // util
+    api 'com.github.SherlockGougou:SherlockUtil:v0.0.3'
+    // subsampling-scale-image-view
+    implementation 'com.davemorrissey.labs:subsampling-scale-image-view:3.10.0'
+
+}

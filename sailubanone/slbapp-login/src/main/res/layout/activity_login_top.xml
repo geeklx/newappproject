@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/color_11B5AF">
+
+    <TextView
+        android:id="@+id/tv_left"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/ic_login_back"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tv_center"
+        style="@style/logintop"
+        android:text="测试" />
+
+
+</RelativeLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+
+    <RelativeLayout
+        android:id="@+id/rlTop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y140"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/ic_web_title_bg">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="25dp"
+            android:paddingRight="1dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_back" />
+
+        <TextView
+            android:id="@+id/tv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_back"
+            android:text="返回"
+            android:textColor="#FFEFEFEF"
+            android:textSize="22sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="13dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_web_close"
+            android:visibility="gone" />
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_title"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_toLeftOf="@id/close"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:gravity="center"-->
+            <!--android:singleLine="true"-->
+            <!--android:text="WRWRWRWRW"-->
+            <!--android:textColor="#FFEFEFEF"-->
+            <!--android:textSize="20sp" />-->
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/close"
+            android:ellipsize="end"
+            android:paddingTop="@dimen/x40"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="sdfsafdsafas"
+            android:textColor="#FFEFEFEF"
+            android:textSize="20sp" />
+    </RelativeLayout>
+</RelativeLayout>

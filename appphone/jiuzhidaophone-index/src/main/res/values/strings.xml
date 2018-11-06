@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">jiuzhidaophone-index</string>
+    <string name="settings_feed_back_tx">意见反馈</string>
+    <string name="settings_message_center_tx">消息中心</string>
+    <string name="settings_tx">设置</string>
+    <string name="settings_msg_notice_tx">消息接收提醒</string>
+    <string name="settings_open_notice_tx">开瓶提醒</string>
+    <string name="settings_trouble_notice_tx">故障提醒</string>
+    <string name="settings_cen_degree_tx">摄氏度°C</string>
+    <string name="settings_fah_degree_tx">华摄度°F</string>
+    <string name="settings_volume">音量</string>
+    <string name="settings_mute_mode">静音模式</string>
+    <string name="settings_clear_memory_tx">清除缓存</string>
+    <string name="settings_text_address">地址管理</string>
+    <string name="settings_check_updates_tx">检测更新</string>
+    <string name="settings_help_tx">帮助</string>
+    <string name="settings_about_tx">关于</string>
+    <string name="settings_logout_tx">退出登录</string>
+    <string name="cellarette_bound_notice_tx">亲暂未绑定任何酒柜\n如想体验更好的服务，请绑定酒柜</string>
+    <string name="settings_shared">分享</string>
+
+    <string name="demo1">亲暂未绑定任何酒柜\n如想体验更好的服务，请绑定酒柜亲暂未绑定任何酒柜\n如想体验更好的服务，请绑定酒柜
+    亲暂未绑定任何酒柜\n如想体验更好的服务，请绑定酒柜亲暂未绑定任何酒柜\n如想体验更好的服务，请绑定酒柜亲暂未绑定任何酒柜\n如想体验更好的服务，请绑定酒柜
+        亲暂未绑定任何酒柜\n如想体验更好的服务，请绑定酒柜亲暂未绑定任何酒柜\n如想体验更好的服务，请绑定酒柜亲暂未绑定任何酒柜\n如想体验更好的服务，请绑定酒柜
+        亲暂未绑定任何酒柜\n如想体验更好的服务，请绑定酒柜亲暂未绑定任何酒柜\n如想体验更好的服务，请绑定酒柜亲暂未绑定任何酒柜\n如想体验更好的服务，请绑定酒柜
+        亲暂未绑定任何酒柜\n如想体验更好的服务，请绑定酒柜亲暂未绑定任何酒柜\n如想体验更好的服务，请绑定酒柜亲暂未绑定任何酒柜\n如想体验更好的服务，请绑定酒柜
+       </string>
+
+
+</resources>

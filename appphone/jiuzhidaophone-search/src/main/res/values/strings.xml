@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">jiuzhidaophone-search</string>
+    <string name="shop_search_hotword">热门搜索</string>
+    <string name="shop_search_historyword">历史记录</string>
+    <string name="shop_search_clearhistory">清空历史</string>
+    <!--<string name="shop_search_header">海尔酒知道</string>-->
+
+</resources>

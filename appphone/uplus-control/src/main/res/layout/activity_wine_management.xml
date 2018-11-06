@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include
+        android:id="@+id/ly_top"
+        layout="@layout/top_layout"/>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swiprefresh"
+        android:layout_below="@id/ly_top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_wine"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v7.widget.RecyclerView>
+        <com.haier.cellarette.baselibrary.emptyview.EmptyView
+            android:id="@+id/ev_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:errornet_layout="@layout/activity_network_errnet"
+            app:loading_layout="@layout/activity_network_loading_transparent"
+            app:nodata_layout="@layout/activity_network_nodata"
+            app:unreachable_layout="@layout/activity_network_unreachable">
+        </com.haier.cellarette.baselibrary.emptyview.EmptyView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</RelativeLayout>

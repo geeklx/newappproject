@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDEBE9">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swip_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.haier.cellarette.baselibrary.zuni.ZuniScrollView
+            android:id="@+id/scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rl_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y400">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/iv_me_top" />
+
+                    <com.haier.cellarette.baselibrary.widget.CircleImageView
+                        android:id="@+id/iv_photo"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/icon"
+                        app:civ_border_color="@color/white"
+                        app:civ_border_width="1dp" />
+
+                    <TextView
+                        android:id="@+id/tv_book_store_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/iv_photo"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:text="18699999999"
+                        android:textColor="#fff"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/rl_top"
+                    android:background="@drawable/on_touch_bg"
+                    android:orientation="vertical">
+                    <!--<TextView-->
+                    <!--android:id="@+id/tv_feedback"-->
+                    <!--style="@style/settings_style"-->
+                    <!--android:text="@string/settings_feed_back_tx"/>-->
+                    <!--<TextView-->
+                    <!--android:id="@+id/tv_msg_center"-->
+                    <!--style="@style/settings_style"-->
+                    <!--android:text="@string/settings_message_center_tx"/>-->
+                    <!--<TextView-->
+                    <!--android:id="@+id/tv_settings"-->
+                    <!--style="@style/settings_style"-->
+                    <!--android:text="@string/settings_tx"/>-->
+                    <TextView
+                        android:id="@+id/tv_feedback"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/y106"
+                        android:background="@drawable/on_touch_bg"
+                        android:clickable="true"
+                        android:drawablePadding="@dimen/x20"
+                        android:drawableRight="@drawable/icon_arrow"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/x28"
+                        android:paddingRight="@dimen/x28"
+                        android:text="@string/settings_feed_back_tx"
+                        android:textColor="@color/ff383837"
+                        android:textSize="@dimen/text_size_16" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="@dimen/x28"
+                        android:layout_marginRight="@dimen/x28"
+                        android:background="#DCDCDC" />
+
+                    <TextView
+                        android:id="@+id/tv_msg_center"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/y106"
+                        android:background="@drawable/on_touch_bg"
+                        android:clickable="true"
+                        android:drawablePadding="@dimen/x20"
+                        android:drawableRight="@drawable/icon_arrow"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/x28"
+                        android:paddingRight="@dimen/x28"
+                        android:text="@string/settings_message_center_tx"
+                        android:textColor="@color/ff383837"
+                        android:textSize="@dimen/text_size_16" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="@dimen/x28"
+                        android:layout_marginRight="@dimen/x28"
+                        android:background="#DCDCDC" />
+
+                    <TextView
+                        android:id="@+id/tv_settings"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/y106"
+                        android:background="@drawable/on_touch_bg"
+                        android:clickable="true"
+                        android:drawablePadding="@dimen/x20"
+                        android:drawableRight="@drawable/icon_arrow"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/x28"
+                        android:paddingRight="@dimen/x28"
+                        android:text="设置"
+                        android:textColor="@color/ff383837"
+                        android:textSize="@dimen/text_size_16" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="@dimen/x28"
+                        android:layout_marginRight="@dimen/x28"
+                        android:background="#DCDCDC" />
+
+                    <TextView
+                        android:id="@+id/tv_share"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/y106"
+                        android:background="@drawable/on_touch_bg"
+                        android:clickable="true"
+                        android:drawablePadding="@dimen/x20"
+                        android:drawableRight="@drawable/icon_arrow"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/x28"
+                        android:paddingRight="@dimen/x28"
+                        android:text="@string/settings_shared"
+                        android:textColor="@color/ff383837"
+                        android:textSize="@dimen/text_size_16" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </com.haier.cellarette.baselibrary.zuni.ZuniScrollView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</FrameLayout>

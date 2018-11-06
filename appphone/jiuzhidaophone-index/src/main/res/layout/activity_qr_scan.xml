@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/puzzle_0">
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="500px"-->
+    <!--android:layout_height="500px"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:layout_marginBottom="215px"-->
+    <!--android:layout_marginLeft="710px"-->
+    <!--android:layout_marginRight="710px"-->
+    <!--android:layout_marginTop="215px">-->
+    <!--&lt;!&ndash;局部扫码显示&ndash;&gt;-->
+    <!--<com.haier.zxing.core.ZXingView-->
+    <!--android:id="@+id/zxingview"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--app:qrcv_animTime="1000"-->
+    <!--app:qrcv_barCodeTipText="将条码放入框内，即可自动扫描"-->
+    <!--app:qrcv_barcodeRectHeight="120dp"-->
+    <!--app:qrcv_borderColor="@android:color/white"-->
+    <!--app:qrcv_borderSize="1dp"-->
+    <!--app:qrcv_cornerColor="#EABA7C"-->
+    <!--app:qrcv_cornerLength="60px"-->
+    <!--app:qrcv_cornerSize="3dp"-->
+    <!--app:qrcv_customScanLineDrawable="@drawable/scan_icon_scanline"-->
+    <!--app:qrcv_isBarcode="false"-->
+    <!--app:qrcv_isCenterVertical="false"-->
+    <!--app:qrcv_isOnlyDecodeScanBoxArea="false"-->
+    <!--app:qrcv_isScanLineReverse="true"-->
+    <!--app:qrcv_isShowDefaultGridScanLineDrawable="false"-->
+    <!--app:qrcv_isShowDefaultScanLineDrawable="true"-->
+    <!--app:qrcv_isShowTipBackground="true"-->
+    <!--app:qrcv_isShowTipTextAsSingleLine="false"-->
+    <!--app:qrcv_isTipTextBelowRect="false"-->
+    <!--app:qrcv_rectWidth="500px"-->
+    <!--app:qrcv_scanLineColor="#EABA7C"-->
+    <!--app:qrcv_scanLineMargin="0dp"-->
+    <!--app:qrcv_scanLineSize="0.5dp"-->
+    <!--app:qrcv_tipTextColor="@android:color/white"-->
+    <!--app:qrcv_tipTextSize="12sp"-->
+    <!--app:qrcv_toolbarHeight="0px"-->
+    <!--app:qrcv_topOffset="0dp" />-->
+    <!--</RelativeLayout>-->
+
+
+    <!--全屏扫码显示-->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.haier.index.zxing.core.ZXingView
+            android:id="@+id/zxingview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:qrcv_animTime="1000"
+            app:qrcv_barCodeTipText="将条码放入框内，即可自动扫描"
+            app:qrcv_barcodeRectHeight="120dp"
+            app:qrcv_borderColor="@android:color/white"
+            app:qrcv_borderSize="1dp"
+            app:qrcv_cornerColor="#EABA7C"
+            app:qrcv_cornerLength="20dp"
+            app:qrcv_cornerSize="3dp"
+            app:qrcv_customScanLineDrawable="@drawable/scan_icon_scanline"
+            app:qrcv_isBarcode="false"
+            app:qrcv_isCenterVertical="false"
+            app:qrcv_isOnlyDecodeScanBoxArea="false"
+            app:qrcv_isScanLineReverse="true"
+            app:qrcv_isShowDefaultGridScanLineDrawable="false"
+            app:qrcv_isShowDefaultScanLineDrawable="true"
+            app:qrcv_isShowTipBackground="true"
+            app:qrcv_isShowTipTextAsSingleLine="false"
+            app:qrcv_isTipTextBelowRect="false"
+            app:qrcv_maskColor="#33FFFFFF"
+            app:qrcv_qrCodeTipText="将二维码/条码放入框内，即可自动扫描"
+            app:qrcv_rectWidth="700px"
+            app:qrcv_scanLineColor="#EABA7C"
+            app:qrcv_scanLineMargin="0dp"
+            app:qrcv_scanLineSize="0.5dp"
+            app:qrcv_tipTextColor="@android:color/white"
+            app:qrcv_tipTextSize="12sp"
+            app:qrcv_toolbarHeight="215px"
+            app:qrcv_topOffset="20dp" />
+
+
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:visibility="gone"
+            android:id="@+id/zxing_iv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="215px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/scan_barcode"
+            android:layout_width="210px"
+            android:layout_height="70px"
+            android:background="@drawable/selector_btn_orange"
+            android:gravity="center"
+            android:text="扫条形码"
+            android:textColor="@color/black"
+            android:textSize="34px" />
+
+        <TextView
+            android:id="@+id/scan_wine"
+            android:layout_width="210px"
+            android:layout_height="70px"
+            android:layout_marginLeft="78px"
+            android:background="@drawable/selector_btn_storke_orang"
+            android:gravity="center"
+            android:text="扫描识酒"
+            android:textColor="@color/gold_color"
+            android:textSize="34px" />
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

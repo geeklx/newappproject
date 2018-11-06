@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/roundcorner_rect_white_bg" >
+
+    <TextView
+        android:id="@+id/smartconfig_dialog_title"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:text="@string/title_configing"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <!--<ImageView-->
+        <!--android:id="@+id/smartconfig_dialog_title_line"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:layout_below="@+id/smartconfig_dialog_title"-->
+        <!--android:background="@android:color/black" -->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:layout_marginRight="20dp"/>-->
+
+    <LinearLayout
+        android:id="@+id/smartconfig_dialog_timePicker"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/smartconfig_dialog_title"
+        android:gravity="center"
+        android:padding="20dp">
+
+        <RelativeLayout
+            android:id="@+id/smartconfig_wait_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ProgressBar
+                android:id="@+id/smartconfig_dialog_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:background="#00000000"
+                style="?android:attr/progressBarStyleSmall"
+                android:indeterminate="false" />
+
+            <TextView
+                android:id="@+id/smartconfig_dialog_left_note"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/smartconfig_dialog_left"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/tip_configing"/>
+            
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!--<ImageView-->
+        <!--android:id="@+id/date_dialog_below_line2"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:layout_below="@id/smartconfig_dialog_timePicker"-->
+        <!--android:background="@android:color/black" -->
+        <!--android:layout_marginLeft="30dp"-->
+        <!--android:layout_marginRight="30dp"/>-->
+
+    <LinearLayout
+        android:id="@+id/cancel_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/smartconfig_dialog_timePicker"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/btn_cancel_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="取消配置"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</RelativeLayout>

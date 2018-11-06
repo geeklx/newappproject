@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">jiuzhidaophone-address</string>
+    <string name="title">收货地址</string>
+    <string name="create">新增地址</string>
+    <string name="change">修改地址</string>
+    <string name="okAddress">确认收货地址</string>
+</resources>

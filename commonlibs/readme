@@ -1,0 +1,28 @@
+此类为APP必备工具libs
+
+libglide37：glide图片牛逼
+
+libglin：很不错的网络请求框架
+
+libmvp：mvp不谈 就是牛逼
+
+librararyforfileprovdider：鸿洋的6.0 7.0 8.0 权限工具类 不谈 牛逼
+
+libretrofit：网络请求框架（待完善各种情况下的参数拼接）
+
+libupdateapputils：APP升级工具一体类
+
+libutils：常用util
+
+libvariants：分版lib：线上 线下 预生产
+
+libwebview：webview HIOS来回跳切原生 牛逼
+
+
+
+
+
+
+
+
+

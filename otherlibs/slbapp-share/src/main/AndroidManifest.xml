@@ -1,0 +1,149 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.slbappshare">
+
+    <!-- Required -->
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <!-- Optional. Required for location feature -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+
+        <activity
+            android:name=".ShareIndexActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="hs.act.slbapp.ShareIndexActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".fenxiang.ShareBottomActivity"
+            android:theme="@style/Transparentsss">
+            <intent-filter>
+                <action android:name="hs.act.slbapp.ShareBottomActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".denglu.ShareIndex1Activity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="hs.act.slbapp.ShareIndex1Activity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".denglu.ShareIndex2Activity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="hs.act.slbapp.ShareIndex2Activity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!--jiguang分享和第三方登录bufen-->
+
+        <!-- Required SDK核心功能-->
+        <activity
+            android:name="cn.jiguang.share.android.ui.JiguangShellActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <!-- Optional QQ分享回调-->
+            <!-- scheme为“tencent”前缀再加上QQ开发者应用的appID；例如appID为123456，则scheme＝“tencent123456” -->
+            <intent-filter>
+                <data android:scheme="tencent1106011004" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <!--&lt;!&ndash; Optional 新浪微博分享回调 &ndash;&gt;-->
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <!-- Optional 新浪微博私信回调-->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="sinaweibo"
+                    android:scheme="jsharesdk" />
+            </intent-filter>
+        </activity>
+        <!-- Optional 微信分享回调,wxapi必须在包名路径下，否则回调不成功-->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- Optional facebook配置,authorities必须为com.facebook.app.FacebookContentProvider+APP_ID-->
+        <provider
+            android:name="cn.jiguang.share.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider1847959632183996"
+            android:exported="true" />
+
+        <!-- User defined.  For test only  用户自定义的广播接收器-->
+        <receiver android:name=".FaceBookUploadReceiver">
+            <intent-filter>
+                <action android:name="com.facebook.platform.AppCallResultBroadcast" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Optional jchatpro分享回调,plugin必须在包名路径下，否则回调不成功-->
+        <activity
+            android:name=".plugin.JChatProCallbackActivity"
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- Required. For publish channel feature -->
+        <!-- JPUSH_CHANNEL 是为了方便开发者统计APK分发渠道。-->
+        <!-- 例如: -->
+        <!-- 发到 Google Play 的APK可以设置为 google-play; -->
+        <!-- 发到其他市场的 APK 可以设置为 xxx-market。 -->
+        <!-- 目前这个渠道统计功能的报表还未开放。-->
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default" />
+        <!-- Required. AppKey copied from Portal -->
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="8a873a5464904872b9dad9f4" />
+
+        <!--jiguang分享和第三方登录bufen-->
+
+    </application>
+
+</manifest>

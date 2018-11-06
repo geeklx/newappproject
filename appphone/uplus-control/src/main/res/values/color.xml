@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="red">#ff0000</color>
+    <color name="gray_dark">#33ffffff</color>
+    <color name="white">#ffffff</color>
+
+    <!-- 编辑框背景色-->
+    <color name="color_white">#FFFFFF</color>
+    <color name="color_e1e1e1">#E1E1E1</color>
+    <color name="color_979797">#979797</color>
+    <color name="gray_color">#999999</color>
+    <color name="wifi_color">#929292</color>
+
+
+    <color name="color_main_top">#F5C382</color>
+    <color name="color_home_seekbar_ring">#33ffffff</color>
+</resources>

@@ -1,0 +1,56 @@
+apply plugin: 'com.android.library'
+apply from: '../../assemble_dolast.gradle'
+def config = rootProject.ext //配置
+def librarys = rootProject.ext.dependencies //依赖
+android {
+    publishNonDefault true
+    compileSdkVersion config.compileSdkVersion
+    buildToolsVersion config.buildToolsVersion
+    defaultConfig {
+        minSdkVersion config.minSdkVersion
+        targetSdkVersion config.targetSdkVersion
+        versionCode config.versionCode
+        versionName config.versionName
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    flavorDimensions "keep"
+    productFlavors {
+        bxnt_nation { dimension "keep" }
+        bxny_nation { dimension "keep" }
+        bxn_nation { dimension "keep" }
+    }
+    libraryVariants.all { variant ->
+        variant.outputs.all {
+//            outputFileName = "${variant.name}-${variant.versionName}.apk"
+            outputFileName = "${project.name}_${variant.flavorName}.aar"
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation librarys.fastJson
+    implementation librarys.okhttpVersion
+    implementation librarys.okioVersion
+
+    implementation(name:'libmvp', ext:'aar')
+    implementation(name: 'libutils', ext: 'aar')
+//    implementation(name: 'libglin', ext: 'aar')
+    implementation project(':commonlibs:libretrofit')
+    // implementation(name: 'libretrofit', ext: 'aar')
+    implementation librarys.retrofit
+    implementation librarys.retrofitgconverter
+    implementation librarys.okhttpVersion
+
+    bxnt_nationImplementation(name: 'libvariants_bxnt_nation', ext: 'aar')
+    bxny_nationImplementation(name: 'libvariants_bxny_nation', ext: 'aar')
+    bxn_nationImplementation(name: 'libvariants_bxn_nation', ext: 'aar')
+
+
+}

@@ -1,0 +1,43 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.slbapplogin">
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="hs.act.slbapp.LoginActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ZhuceActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="hs.act.slbapp.ZhuceActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".WangjiActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="hs.act.slbapp.WangjiActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ChongzhiActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="hs.act.slbapp.ChongzhiActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

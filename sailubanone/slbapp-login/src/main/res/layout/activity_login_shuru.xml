@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/x40"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_zh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x30"
+            android:padding="10dp"
+            android:text="账号"
+            android:textColor="@color/gray222328"
+            android:textSize="@dimen/text_size_18" />
+
+        <EditText
+            android:id="@+id/edt1"
+            style="@style/logincontentedit"
+            android:layout_width="match_parent"
+            android:layout_toRightOf="@+id/tv_zh"
+            android:hint="用户名/手机号/邮箱"
+            android:inputType="textVisiblePassword"
+            android:maxLength="11"
+            android:padding="@dimen/x10" />
+
+    </RelativeLayout>
+
+    <View
+        style="@style/logincommviewline"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_mm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x30"
+            android:padding="10dp"
+            android:text="密码"
+            android:textColor="@color/gray222328"
+            android:textSize="@dimen/text_size_18" />
+
+        <EditText
+            android:id="@+id/edt2"
+            style="@style/logincontentedit"
+            android:layout_width="match_parent"
+            android:layout_toRightOf="@+id/tv_mm"
+            android:hint="密码"
+            android:inputType="textPassword"
+            android:maxLength="11"
+            android:padding="@dimen/x10" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
+
+

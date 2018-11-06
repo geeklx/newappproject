@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible"
+        tools:visibility="visible">
+
+        <TextView
+            android:id="@+id/tv01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="普通的Activity包名HiosRegister跳转"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="普通的Activity包名未HiosRegister跳转" />
+
+        <TextView
+            android:id="@+id/tv21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="普通的ActivityAction跳转" />
+
+        <TextView
+            android:id="@+id/tv31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="继承webviewactivity请求接口" />
+
+        <TextView
+            android:id="@+id/tv41"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="继承webviewactivity不请求接口" />
+
+        <TextView
+            android:id="@+id/tv51"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="继承webviewactivity调用JS页面按钮" />
+
+        <TextView
+            android:id="@+id/tv61"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="嵌套webview布局" />
+    </LinearLayout>
+
+</RelativeLayout>

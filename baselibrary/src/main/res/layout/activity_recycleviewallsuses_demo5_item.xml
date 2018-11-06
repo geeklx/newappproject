@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_marginBottom="1dp"
+    android:background="@android:color/white"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <com.haier.cellarette.baselibrary.widget.CircleImageView
+                android:id="@+id/iv_head"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="16dp"
+                android:src="@drawable/ic_zhaoliying" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="13dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="item 1"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:text="allencoder2013@gmail.com"
+                    android:textColor="#48495F" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="27dp"
+                android:scaleType="center"
+                android:src="@mipmap/drag_icon" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/line_gray" />
+    </LinearLayout>
+
+
+</LinearLayout>

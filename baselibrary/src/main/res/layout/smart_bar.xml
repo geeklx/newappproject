@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.haier.cellarette.baselibrary.smartbar.SmartBar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/smart_bar"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="left|bottom"
+    android:layout_marginBottom="@dimen/y20"
+    android:layout_marginLeft="@dimen/x20"
+    app:home_icon="@drawable/smartbar_home_icon"
+    app:back_icon="@drawable/smartbar_back_icon"
+    app:icon_padding="@dimen/x14"
+    android:orientation="vertical" />

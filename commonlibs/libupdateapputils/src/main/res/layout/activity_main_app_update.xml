@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main_app_update"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="这里是借助百度云盘apk下载地址作为测试"/>
+
+    <Button
+        android:id="@+id/btn_normalUpdate"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="最基本使用"/>
+
+    <Button
+        android:id="@+id/btn_webDownlaod"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="浏览器下载apk"/>
+
+    <Button
+        android:id="@+id/btn_forceUpdate"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="强制更新，不更新退出app"/>
+
+    <Button
+        android:id="@+id/btn_checkNameUpdate"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="通过Version_Name判断更新，不同则更新\n（当前Version_Name1.0）"/>
+
+</LinearLayout>

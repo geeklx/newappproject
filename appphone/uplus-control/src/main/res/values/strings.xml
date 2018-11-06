@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">uplus-control</string>
+
+    <string name="my_home">SSID</string>
+    <string name="conntect_wifi">当前连接网络</string>
+    <string name="set_new_pass">输入WiFi密码</string>
+    <string name="next">下一步</string>
+    <string name="notice">请确保此WIFI为您的家庭网络并且可连接外部互联网，如果隐藏您的网络名称，请取消隐藏</string>
+    <string name="tip_click_2_smartlink">点击进行配置入网</string>
+    <string name="tip_smartdevice_noti_appear"> 出现了!</string>
+
+    <string name="tip_wifioff">请确认设备WiFi是否打开</string>
+    <string name="code_config_ok_device">成功入网的设备：</string>
+    <string name="code_config_failture">配置失败:</string>
+    <string name="code_check_wifiname">请填写无线SSID名称！</string>
+    <string name="code_check_wifipass">请填写无线密码</string>
+
+    <string name="title_configing">正在配置</string>
+    <string name="devicestatus_unconnected">未连接</string>
+    <string name="devicestatus_connecting">连接中</string>
+    <string name="devicestatus_connected">已连接</string>
+    <string name="devicestatus_offline">下线</string>
+    <string name="devicestatus_ready">就绪</string>
+
+    <string name="bindinguy">已经配置成功\n可以体验精彩服务内容</string>
+    <string name="tip_configing">正在配置设备入网，请稍后....</string>
+    <string name="tip_device_connect_status"> 连接状态:</string>
+
+    <string name="tip_deviceproperty">智能设备属性列表：</string>
+
+    <string name="title_udevkitboard_properties">属性状态</string>
+    <string name="tip_udevkitboard_on">开机状态</string>
+    <string name="tip_udevkitboard_temp">传感器温度</string>
+    <string name="title_udevkitboard_control">发送指令</string>
+
+
+    <string name="title_elecheater_properties">属性状态:</string>
+    <string name="title_elecheater_control">发送指令</string>
+    <string name="tip_elecheater_on">开机状态</string>
+    <string name="tip_elecheater_temp">设定温度</string>
+    <string name="label_elecheater_appointment">约定时间</string>
+    <string name="title_elecheater_alarm">报警和提示</string>
+    <string name="lable_elecheater_alarm">报警</string>
+
+    <string name="link_wifi_success">已经配置成功\n可以体验精彩服务内容</string>
+</resources>

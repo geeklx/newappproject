@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80000000"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1px"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll1"
+                style="@style/item">
+
+                <RelativeLayout
+                    android:layout_width="60dp"
+                    android:layout_height="60dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/jiguang_socialize_wechat" />
+
+                    <LinearLayout
+                        android:id="@+id/ll1a"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/img_jump_shop"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="微信好友" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll2"
+                style="@style/item">
+
+                <RelativeLayout
+                    android:layout_width="60dp"
+                    android:layout_height="60dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/jiguang_socialize_wxcircle" />
+
+                    <LinearLayout
+                        android:id="@+id/ll2a"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/img_jump_shop"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="微信朋友圈" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll3"
+                style="@style/item">
+
+                <RelativeLayout
+                    android:layout_width="60dp"
+                    android:layout_height="60dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/jiguang_socialize_wxfavorite" />
+
+                    <LinearLayout
+                        android:id="@+id/ll3a"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/img_jump_shop"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="微信收藏" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll4"
+                style="@style/item">
+
+                <RelativeLayout
+                    android:layout_width="60dp"
+                    android:layout_height="60dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/jiguang_socialize_qq" />
+
+                    <LinearLayout
+                        android:id="@+id/ll4a"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/img_jump_shop"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="QQ" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1px"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll5"
+                style="@style/item">
+
+                <RelativeLayout
+                    android:layout_width="60dp"
+                    android:layout_height="60dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/jiguang_socialize_qzone" />
+
+                    <LinearLayout
+                        android:id="@+id/ll5a"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/img_jump_shop"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="QQ空间" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll6"
+                style="@style/item">
+
+                <RelativeLayout
+                    android:layout_width="60dp"
+                    android:layout_height="60dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/jiguang_socialize_sina" />
+
+                    <LinearLayout
+                        android:id="@+id/ll6a"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/img_jump_shop"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="新浪微博" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_mail1"
+                style="@style/item">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll7"
+                style="@style/item"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/jiguang_socialize_sina" />
+
+                    <LinearLayout
+                        android:id="@+id/ll7a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/img_jump_shop"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="微博私信" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_mail"
+                style="@style/item">
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/page_header"/>
+
+    <!--search view-->
+    <com.haier.search.view.ShopSearchView
+        android:id="@+id/ssv_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:searchBlockHeight="120"
+        android:layout_marginTop="@dimen/y10"
+        app:textColorSearch="#9b9b9b"
+        app:searchBlockColor="#F8F8F8"
+        app:textHintSearch="拉睦"
+        app:textSizeSearch="@dimen/x12"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:layout_marginTop="@dimen/y10"
+        android:background="#DADADA"/>
+
+    <TextView
+        android:layout_marginLeft="@dimen/x27"
+        android:layout_marginTop="@dimen/y50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/shop_search_hotword"
+        android:textColor="#2E2E2E"
+        android:textSize="@dimen/text_size_18"/>
+
+    <com.haier.cellarette.baselibrary.flowlayout.TagFlowLayout
+        android:id="@+id/tfl_hotword"
+        android:layout_marginTop="@dimen/y9"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/x13"
+        android:layout_marginRight="@dimen/x13"
+        android:layout_height="wrap_content"
+        app:max_select="1"/>
+
+    <TextView
+        android:layout_marginLeft="@dimen/x27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y82"
+        android:text="@string/shop_search_historyword"
+        android:textColor="#2E2E2E"
+        android:textSize="@dimen/text_size_18"/>
+
+    <com.haier.cellarette.baselibrary.flowlayout.TagFlowLayout
+        android:id="@+id/tfl_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x13"
+        android:layout_marginRight="@dimen/x13"
+        android:layout_marginTop="@dimen/y9"
+        app:max_select="1"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_clear_searchhistory"
+        android:layout_width="@dimen/x530"
+        android:layout_height="@dimen/x110"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/y75"
+        android:background="@drawable/corner_bg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/shop_search_clearhistory"
+            android:textColor="#838383"
+            android:textSize="@dimen/text_size_18"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

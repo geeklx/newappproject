@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+
+    <RelativeLayout
+        android:id="@+id/rlTop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y140"
+        android:background="@drawable/ic_web_title_bg">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="25dp"
+            android:paddingRight="1dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/icon_back" />
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/topLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x60"
+            android:layout_toRightOf="@+id/iv_back" />
+
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_create_add"
+            style="@style/topLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/x25"
+            android:layout_alignParentRight="true"
+            android:text="@string/create" />
+
+
+        <ImageView
+            android:id="@+id/iv_delete"
+            android:visibility="gone"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="@dimen/x25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/delete_icon" />
+    </RelativeLayout>
+
+</RelativeLayout>

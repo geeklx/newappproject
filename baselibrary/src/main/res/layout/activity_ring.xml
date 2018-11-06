@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false">
+
+    <FrameLayout
+        android:id="@+id/tv_ring_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent_half_half_half" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/x40"
+        android:layout_marginTop="@dimen/y82">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/volume_bg"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y140"
+                android:layout_marginLeft="@dimen/x13">
+
+                <LinearLayout
+                    android:layout_width="@dimen/x93"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/x43"
+                        android:layout_height="@dimen/y48"
+                        android:src="@drawable/ic_ring_notifications" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/y6" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="通知"
+                        android:textColor="#212121"
+                        android:textSize="@dimen/text_size_12" />
+                </LinearLayout>
+
+                <SeekBar
+                    android:id="@+id/sb_vol_notification"
+                    android:layout_width="@dimen/x527"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:maxHeight="@dimen/y4"
+                    android:minHeight="@dimen/y4"
+                    android:progressDrawable="@drawable/volume_bg_progress"
+                    android:splitTrack="false"
+                    android:thumb="@drawable/volume_thumb" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:background="#DAD7D2" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y140"
+                android:layout_marginLeft="@dimen/x13">
+
+                <LinearLayout
+                    android:layout_width="@dimen/x93"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/x43"
+                        android:layout_height="@dimen/y48"
+                        android:src="@drawable/ic_ring_sound" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/y6" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="媒体"
+                        android:textColor="#212121"
+                        android:textSize="@dimen/text_size_12" />
+                </LinearLayout>
+
+                <SeekBar
+                    android:id="@+id/sb_vol_media"
+                    android:layout_width="@dimen/x527"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:maxHeight="@dimen/y4"
+                    android:minHeight="@dimen/y4"
+                    android:progressDrawable="@drawable/volume_bg_progress"
+                    android:splitTrack="false"
+                    android:thumb="@drawable/volume_thumb" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:background="#DCDCDC" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y140"
+                android:layout_marginLeft="@dimen/x13">
+
+                <LinearLayout
+                    android:layout_width="@dimen/x93"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/x43"
+                        android:layout_height="@dimen/y48"
+                        android:src="@drawable/ic_ring_alarm" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/y6" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="闹钟"
+                        android:textColor="#212121"
+                        android:textSize="@dimen/text_size_12" />
+                </LinearLayout>
+
+                <SeekBar
+                    android:id="@+id/sb_vol_alarm"
+                    android:layout_width="@dimen/x527"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:max="100"
+                    android:maxHeight="@dimen/y4"
+                    android:minHeight="@dimen/y4"
+                    android:progressDrawable="@drawable/volume_bg_progress"
+                    android:splitTrack="false"
+                    android:thumb="@drawable/volume_thumb" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:background="#DCDCDC" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y100"
+                android:layout_marginHorizontal="@dimen/x13">
+
+
+                <RadioGroup
+                    android:id="@+id/rg_ring_effect"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_ring1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/x16"
+                        android:button="@drawable/volume_radiobutton_selector"
+                        android:text="音效1"
+                        android:textSize="@dimen/text_size_12" />
+
+                    <RadioButton
+                        android:id="@+id/rb_ring2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/x40"
+                        android:button="@drawable/volume_radiobutton_selector"
+                        android:gravity="center"
+                        android:text="音效2"
+                        android:textSize="@dimen/text_size_12" />
+
+                    <RadioButton
+                        android:id="@+id/rb_ring3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/x40"
+                        android:button="@drawable/volume_radiobutton_selector"
+                        android:text="音效3"
+                        android:textSize="@dimen/text_size_12" />
+                </RadioGroup>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:background="#DCDCDC" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y100"
+                android:layout_marginLeft="@dimen/x13">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x18"
+                    android:text="静音"
+                    android:textColor="#212121"
+                    android:textSize="@dimen/text_size_14" />
+
+                <com.haier.cellarette.baselibrary.widget.SwitchButton
+                    android:id="@+id/sb_mute_mode"
+                    android:layout_width="@dimen/x95"
+                    android:layout_height="@dimen/y68"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x28"
+                    app:sb_checked="true"
+                    app:sb_show_indicator="false" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_ring_exit"
+            android:layout_width="@dimen/x85"
+            android:layout_height="@dimen/y75"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="-16dp"
+            android:layout_marginTop="-11dp"
+            android:src="@drawable/ic_ring_exit" />
+
+    </RelativeLayout>
+
+</FrameLayout>

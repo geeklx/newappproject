@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--common search view-->
+    <color name="colorDefault">#ffffff</color>
+    <color name="colorBackground">#f1f0f6</color>
+    <color name="colorText">#9b9b9b</color>
+
+    <color name="shop_cate_list_bg">#f1f1f1</color>
+    <color name="shop_cate_list_green">#D50050</color>
+    <color name="shop_cate_list_normal">#929292</color>
+
+</resources>

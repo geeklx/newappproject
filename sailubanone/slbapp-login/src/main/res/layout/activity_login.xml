@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.haier.cellarette.baselibrary.zothers.AutoHideInputMethodFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/color_F9F7F9"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <include layout="@layout/activity_login_top" />
+        <!--content-->
+        <com.haier.cellarette.baselibrary.widget.CustomImageView
+            android:id="@+id/iv_center"
+            android:layout_width="@dimen/x220"
+            android:layout_height="@dimen/x220"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/y50"
+            app:src="@drawable/ic_zhaoliying"
+            app:type="circle" />
+
+        <include layout="@layout/activity_login_shuru" />
+
+        <include layout="@layout/activity_login_checkbox" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_sure"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y100"
+                android:layout_marginLeft="@dimen/x40"
+                android:layout_marginRight="@dimen/x40"
+                android:background="@drawable/btn_sure"
+                android:text="登录"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/text_size_16" />
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y100"
+                android:layout_marginBottom="@dimen/x10"
+                android:layout_marginLeft="@dimen/x40"
+                android:layout_marginRight="@dimen/x40"
+                android:layout_marginTop="@dimen/x20"
+                android:background="@drawable/btn_cancel"
+                android:text="临时访问"
+                android:textSize="@dimen/text_size_16" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_zc"
+                style="@style/logincommtextview"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/x40"
+                android:padding="@dimen/x40"
+                android:text="注册"
+                android:textSize="@dimen/text_size_14" />
+
+            <TextView
+                android:id="@+id/tv_wjmm"
+                style="@style/logincommtextview"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/x40"
+                android:padding="@dimen/x40"
+                android:text="忘记密码"
+                android:textSize="@dimen/text_size_14" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x40"
+                android:layout_marginRight="@dimen/x40"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <View
+                    style="@style/logincommviewline"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    style="@style/logincommtextview"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:layout_marginRight="@dimen/x20"
+                    android:text="其他方式快捷登录"
+                    android:textSize="@dimen/text_size_14" />
+
+                <View
+                    style="@style/logincommviewline"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x20"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_wx"
+                    android:layout_width="@dimen/x100"
+                    android:layout_height="@dimen/x100"
+                    android:padding="@dimen/x10"
+                    android:src="@drawable/share_wechat_solid" />
+                <ImageView
+                    android:id="@+id/iv_wx2"
+                    android:layout_width="@dimen/x100"
+                    android:layout_height="@dimen/x100"
+                    android:padding="@dimen/x10"
+                    android:src="@drawable/share_wechat_solid" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <!--content-->
+    </LinearLayout>
+</com.haier.cellarette.baselibrary.zothers.AutoHideInputMethodFrameLayout>

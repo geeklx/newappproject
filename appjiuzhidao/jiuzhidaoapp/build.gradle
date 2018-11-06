@@ -1,0 +1,99 @@
+apply plugin: 'com.android.application'
+def config = rootProject.ext //
+def librarys = rootProject.ext.dependencies //
+android {
+    aaptOptions {
+        cruncherEnabled = false
+        useNewCruncher = false
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+
+//    dexOptions {
+//        incremental true
+//        javaMaxHeapSize "4g"
+//    }
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+    signingConfigs {
+        debug {
+            storeFile file('../../firebox_keystore.jks')
+            keyAlias 'haier'
+            keyPassword 'android'
+            storePassword 'android'
+        }
+    }
+    compileSdkVersion config.compileSdkVersion
+    buildToolsVersion config.buildToolsVersion
+    defaultConfig {
+//        buildConfigField "boolean", "IS_LOG_ENABLE", rootProject.ext.IS_LOG_ENABLE
+
+        applicationId "com.haier.jiuzhidaoapp"
+        minSdkVersion config.minSdkVersion
+        targetSdkVersion config.targetSdkVersion
+        versionCode config.versionCode
+        versionName applicationId.split("\\.")[2].toUpperCase() + config.versionName
+//        versionName "jiuzhidaoapp"+config.versionName
+
+        multiDexEnabled true
+        renderscriptTargetApi 19
+        renderscriptSupportModeEnabled true
+        ndk {
+            moduleName "aaaa,bbb"
+            ldLibs "log", "z", "m", "android", "c"
+            abiFilters "armeabi", "armeabi-v7a", "x86"
+        }
+        sourceSets.main {
+            jni.srcDirs = []
+            //LOCAL_LDFLAGS += -fuse-ld=bfd
+            //jni.srcDirs 'src/main/jni'
+            jniLibs.srcDir 'src/main/libs'
+        }
+        signingConfig signingConfigs.debug
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+//            zipAlignEnabled false
+//            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//            signingConfig signingConfigs.debug
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+//    androidTestimplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+//        exclude group: 'com.android.support', module: 'support-annotations'
+//    })
+//    testimplementation 'junit:junit:4.12'
+
+    implementation librarys.design
+    implementation librarys.appcompatV7
+    implementation librarys.supportannotations
+    implementation librarys.recyclerviewv7
+    implementation librarys.cardviewv7
+
+    implementation librarys.glide37
+    implementation librarys.multidexVersion
+
+    implementation project(':baselibrary')
+    implementation(name: 'libutils', ext: 'aar')
+    implementation(name: 'libglide37', ext: 'aar')
+    implementation(name: 'libwebview', ext: 'aar')
+    implementation(name: 'libglin', ext: 'aar')
+    implementation project(':commonlibs:libretrofit')
+//    implementation(name: 'libretrofit', ext: 'aar')
+
+    implementation project(':appjiuzhidao:jiuzhidao-demo')
+    implementation project(':appjiuzhidao:jiuzhidao-dermo1')
+
+}

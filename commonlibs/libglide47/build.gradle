@@ -1,0 +1,44 @@
+apply plugin: 'com.android.library'
+def config = rootProject.ext //配置
+def librarys = rootProject.ext.dependencies //依赖
+android {
+    compileSdkVersion config.compileSdkVersion
+    buildToolsVersion config.buildToolsVersion
+    defaultConfig {
+        minSdkVersion config.minSdkVersion
+        targetSdkVersion config.targetSdkVersion
+        versionCode config.versionCode
+        versionName config.versionName
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation librarys.design
+    implementation librarys.appcompatV7
+    implementation librarys.supportannotations
+    implementation librarys.recyclerviewv7
+    implementation librarys.percent
+    // glide47
+    implementation librarys.glide47
+    implementation librarys.glide47AnnProcessor
+    annotationProcessor librarys.annotationProcessorglide47compiler
+    implementation librarys.glide47okhttp3integration
+    implementation librarys.photoView
+    //
+
+
+//    implementation(name: 'libutils', ext: 'aar')
+    implementation project(':commonlibs:libutils')
+}

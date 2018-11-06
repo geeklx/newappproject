@@ -1,0 +1,104 @@
+include ':app'
+
+// start aar
+
+include ':libsCenter', ':biz-libs'
+
+//end aar
+
+// start other libs
+
+include ':otherlibs',
+        ':otherlibs:jiaozivideoplayer',
+        ':otherlibs:imagepicker',
+        ':otherlibs:libraryglide37sinayulan',
+        ':otherlibs:libgreendao',
+        ':otherlibs:slbapp-share',
+        ':otherlibs:slbapp-statistics',
+        ':otherlibs:slbapp-jpush'
+
+//end other libs
+
+// start commonlibs
+
+include ':baselibrary'
+
+include ':commonlibs',
+        ':commonlibs:libglin',
+        ':commonlibs:libglide37',
+        ':commonlibs:libglide47',
+        ':commonlibs:libutils',
+        ':commonlibs:libretrofit',
+        ':commonlibs:libvariants',
+        ':commonlibs:libwebview',
+        ':commonlibs:librararyforfileprovdider',
+        ':commonlibs:libupdateapputils',
+        ':commonlibs:libmvp'
+
+// end commonlibs
+
+// start biz
+//include ':biz',
+//        ':biz:biz-demo1',
+//        ':biz:biz-demo2',
+//        ':biz:biz-pollorder',
+//        ':biz:biz-identification',
+//        ':biz:biz-mz',
+//        ':biz:biz-wine-management'
+// end biz
+
+// start biz2
+
+include ':biz2',
+        ':biz2:biz2-phone-demo1',
+        ':biz2:biz2-phone-pay-wx2'
+
+// end biz2.
+
+// start bi3
+
+include ':biz3',
+        ':biz3:biz3-slbapp-demo1'
+
+// end biz3
+
+//appjiuzhidao start
+
+//include ':appjiuzhidao',
+//        ':appjiuzhidao:jiuzhidaoapp',
+//        ':appjiuzhidao:jiuzhidao-demo',
+//        ':appjiuzhidao:jiuzhidao-dermo1'
+
+//appjiuzhidao end
+
+//jiuzhidaophone end
+
+include ':appphone',
+        ':appphone:jiuzhidaophone',
+        ':appphone:jiuzhidaophone-index',
+        ':appphone:uplus-control',
+        ':appphone:jiuzhidaophone-share',
+        ':appphone:jiuzhidaophone-shopcommon',
+        ':appphone:jiuzhidaophone-order',
+        ':appphone:jiuzhidaophone-pay',
+        ':appphone:jiuzhidaophone-search',
+        ':appphone:jiuzhidaophone-usercenter',
+        ':appphone:jiuzhidaophone-cart',
+        ':appphone:jiuzhidaophone-address',
+        ':appphone:jiuzhidaophone-splash'
+
+//jiuzhidaophone end
+
+//slbappone start
+
+include ':sailubanone',
+        ':sailubanone:slbapp',
+        ':sailubanone:slbapp-index',
+        ':sailubanone:slbapp-splash',
+        ':sailubanone:slbapp-login',
+        ':sailubanone:slbappreadbook'
+
+
+//slbappone end
+
+

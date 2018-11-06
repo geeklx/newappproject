@@ -1,0 +1,52 @@
+apply plugin: 'com.android.library'
+def config = rootProject.ext
+def librarys = rootProject.ext.dependencies
+android {
+    compileSdkVersion config.compileSdkVersion
+    buildToolsVersion config.buildToolsVersion
+    defaultConfig {
+        minSdkVersion config.minSdkVersion
+        targetSdkVersion config.targetSdkVersion
+        versionCode config.versionCode
+        versionName config.versionName
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    //common url
+    implementation librarys.design
+    implementation librarys.appcompatV7
+    implementation librarys.supportannotations
+    implementation librarys.recyclerviewv7
+    implementation librarys.cardviewv7
+
+    implementation librarys.glide37
+    implementation librarys.fastJson
+    implementation librarys.gsonJson
+
+    //common aar
+    implementation project(':baselibrary')
+    implementation(name: 'libutils', ext: 'aar')
+    implementation(name: 'libglide37', ext: 'aar')
+    implementation(name: 'libwebview', ext: 'aar')
+    implementation(name: 'libmvp', ext: 'aar')
+
+    implementation(name: 'libglin', ext: 'aar')
+
+    implementation project(':commonlibs:libretrofit')
+//    implementation(name: 'libretrofit', ext: 'aar')
+
+    //jar
+
+//    /**rep*/implementation (name:'biz-demo1_bxn_nation', ext:'aar')
+    /**rep*/implementation (name:'biz-mz_bxn_nation', ext:'aar')
+    /**rep*/implementation (name:'biz-pollorder_bxn_nation', ext:'aar')
+
+}

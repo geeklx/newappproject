@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="280dp"
+        android:layout_height="160dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/notice_dialog_bg">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="提示"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/colorAccent"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_notice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="30dp"
+                android:text=""
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/black_000"
+                android:textSize="14sp" />
+
+
+            <Button
+                android:id="@+id/btn_concle"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:background="@drawable/btn_cancle"
+                android:text="取消"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="40dp"
+                android:layout_alignParentBottom="true"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btn_settings"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="30px"
+                android:background="@drawable/btn_settings"
+                android:text="设置"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

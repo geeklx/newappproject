@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="shop_cate_list_title">
+        <item name="android:textColor">@drawable/cate_list_title_text_selector</item>
+        <item name="android:textSize">@dimen/text_size_18</item>
+    </style>
+
+    <style name="shop_main_entrance">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_width">@dimen/x114</item>
+        <item name="android:layout_height">@dimen/x143</item>
+    </style>
+
+    <style name="shop_main_entrance_img">
+        <item name="android:layout_width">@dimen/x108</item>
+        <item name="android:layout_height">@dimen/x113</item>
+    </style>
+    <style name="shop_main_entrance_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#808080</item>
+        <item name="android:textSize">@dimen/text_size_14</item>
+    </style>
+
+</resources>

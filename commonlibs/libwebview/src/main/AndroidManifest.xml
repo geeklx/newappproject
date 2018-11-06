@@ -1,0 +1,58 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.haier.cellarette.libwebview">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--android:theme="@style/AppThemewebview"-->
+    <application>
+        <activity android:name=".DemoWebviewMainActivity">
+            <intent-filter>
+                <action android:name="hs.ac.webview.DemoWebviewMainActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <!--<action android:name="android.intent.action.MAIN" />-->
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            </intent-filter>
+        </activity>
+        <!--1.0-->
+        <activity android:name=".base.WebViewMainActivity">
+
+            <intent-filter>
+                <action android:name="ad.web.page" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".base.WebViewPartActivity">
+
+            <intent-filter>
+                <action android:name="ad.web.page.part" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!--2.0-->
+        <activity android:name=".base.WebViewActivity">
+
+            <intent-filter>
+                <action android:name="web.page" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activity.HiosMainActivity">
+
+            <intent-filter>
+                <action android:name="hs.ac.TwoMainActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.NoHiosMainActivity">
+
+            <intent-filter>
+                <action android:name="hs.ac.NoHiosMainActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

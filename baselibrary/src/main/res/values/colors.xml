@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="new_text_color">#555771</color>
+    <color name="item_bg">#FFFFFF</color>
+    <color name="color_light_blue">#00DDB6</color>
+
+    <color name="e04832">#FFE04832</color>
+    <color name="mine_background">#f0f0f0</color>
+    <color name="white">#ffffff</color>
+    <color name="fffe">#FFFEFEFE</color>
+    <color name="da3c2c">#FFDA3C2C</color>
+    <color name="gray_stroke">#DCDCDC</color>
+    <color name="blue33b5e5">#33b5e5</color>
+
+    <color name="gray8">#DCDCDC</color>
+    <color name="black">#000000</color>
+
+    <color name="font_fff">#ffffff</color>
+    <color name="font_333">#333333</color>
+    <color name="font_999">#999999</color>
+    <color name="redD60050">#D60050</color>
+
+    <color name="my_sure">#e3e1dd</color>
+
+    <color name="color_333">#333333</color>
+
+    <color name="color_a9">#a9a9a9</color>
+
+    <color name="black_000">#000000</color>
+    <color name="gray_list_head_text">#a9a9a9</color>
+    <color name="orange_red">#FFA000</color>
+    <color name="orange_red_press">#88FFA000</color>
+
+    <color name="aae04832">#AAE04832</color>
+
+    <color name="ff222382">#FF222328</color>
+
+    <color name="ffe04832">#FFE04832</color>
+
+    <color name="color_4a">#4A4A4A</color>
+    <color name="color_42">#FF424242</color>
+
+    <color name="search_shape">#6C6C6C</color>
+    <color name="gray5">#55555D</color>
+    <color name="ef">#efefef</color>
+
+    <color name="search_orange">#FFDD84</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="transparent_half_half_half">#80000000</color>
+    <color name="transparent_half_half_half_half_half_half">#CCCECECE</color>
+
+    <color name="oneKeyRepair">#dddddd</color>
+    <color name="view_line_color">#dcdcdc</color>
+    <color name="gray222328">#222328</color>
+    <color name="grayFAFAFA">#FAFAFA</color>
+    <color name="white_alpha30">#40ffffff</color>
+    <color name="gray">#8E8A98</color>
+
+    <color name="search_transparent">#AA000000</color>
+    <color name="search_blue">#30A1D2</color>
+    <color name="search_hint">#909090</color>
+
+    <color name="color_666">#FF666666</color>
+    <color name="f5f5f5">#f5f5f5</color>
+    <color name="ff383837">#ff383837</color>
+    <color name="f6">#F6F6F6</color>
+    <color name="b3">#FFB3B3B3</color>
+    <color name="ff3f3f">#FFFF3F3E</color>
+    <color name="f4d">#FF4d4d4d</color>
+    <color name="color_666_new">#666666</color>
+
+    <color name="btn_yellow">#F5C382</color>
+    <color name="red">#ff0000</color>
+    <color name="gray_dark">#33ffffff</color>
+    <color name="color_white">#ffffff</color>
+
+    <color name="text_black">#2c2c2c</color>
+    <color name="line_gray">#E0E0E0</color>
+
+    <color name="galleryBg">#212121</color>
+    <color name="grayIconTint">#727272</color>
+    <color name="galleryCurrentItemOverlay">@android:color/transparent</color>
+    <color name="galleryItemOverlay">#cc000000</color>
+    <color name="galleryEdgeEffect">#b4ffffff</color>
+    <color name="galleryAccent">#FFC107</color>
+    <color name="shopRatedStar">#ffeb5a</color>
+    <color name="shopSecondary">#727272</color>
+
+    <array name="gradientPeriodicClouds">
+        <item>@color/gradientPeriodicClouds_c1</item>
+        <item>@color/gradientPeriodicClouds_c2</item>
+        <item>@color/gradientPeriodicClouds_c3</item>
+    </array>
+    <color name="gradientPeriodicClouds_c1">#3453d1</color>
+    <color name="gradientPeriodicClouds_c2">#6d69ff</color>
+    <color name="gradientPeriodicClouds_c3">#cd47c6</color>
+    <array name="gradientCloudy">
+        <item>@color/gradientCloudy_c1</item>
+        <item>@color/gradientCloudy_c2</item>
+        <item>@color/gradientCloudy_c3</item>
+    </array>
+    <color name="gradientCloudy_c1">#62bff5</color>
+    <color name="gradientCloudy_c2">#61b3e5</color>
+    <color name="gradientCloudy_c3">#5d8fb2</color>
+    <array name="gradientMostlyCloudy">
+        <item>@color/gradientMostlyCloudy_c1</item>
+        <item>@color/gradientMostlyCloudy_c2</item>
+        <item>@color/gradientMostlyCloudy_c3</item>
+    </array>
+    <color name="gradientMostlyCloudy_c1">#51bbf5</color>
+    <color name="gradientMostlyCloudy_c2">#71c3ee</color>
+    <color name="gradientMostlyCloudy_c3">#f3e5d2</color>
+    <array name="gradientPartlyCloudy">
+        <item>@color/gradientPartlyCloudy_c1</item>
+        <item>@color/gradientPartlyCloudy_c2</item>
+        <item>@color/gradientPartlyCloudy_c3</item>
+    </array>
+    <color name="gradientPartlyCloudy_c1">#5b64be</color>
+    <color name="gradientPartlyCloudy_c2">#6084df</color>
+    <color name="gradientPartlyCloudy_c3">#64a2ff</color>
+    <array name="gradientClear">
+        <item>@color/gradientClear_c1</item>
+        <item>@color/gradientClear_c2</item>
+        <item>@color/gradientClear_c3</item>
+    </array>
+    <color name="gradientClear_c1">#6d4fbe</color>
+    <color name="gradientClear_c2">#6c56be</color>
+    <color name="gradientClear_c3">#a189f1</color>
+
+    <color name="pink">#E07679</color>
+    <color name="material_text_primary">#de000000</color>
+
+
+    <color name="color_11B5AF">#11B5AF</color>
+    <color name="color_CC11B5AF">#CC11B5AF</color>
+    <color name="color_ff11B5AF">#ff11B5AF</color>
+    <color name="color_dcdcdc">#dcdcdc</color>
+    <color name="color_EDEBE9">#EDEBE9</color>
+    <color name="color_F9F7F9">#F9F7F9</color>
+
+    <color name="load_translation">#00000000</color>
+
+
+</resources>

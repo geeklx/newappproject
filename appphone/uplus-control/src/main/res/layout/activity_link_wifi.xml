@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/ly_top"
+        layout="@layout/top_layout"/>
+    <TextView
+        android:id="@+id/tv_wifi_image"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_below="@+id/ly_top"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="61dp"
+        android:background="@drawable/wifi_icon"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_now_wifi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_wifi_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="9dp"
+        android:text="@string/my_home"
+        android:textSize="16sp"
+        android:textColor="#474747"/>
+    <TextView
+        android:id="@+id/tv_connect_wifi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_now_wifi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:text="@string/conntect_wifi"
+        android:textSize="16sp"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_set_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_connect_wifi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp">
+
+        <EditText
+            android:id="@+id/et_set_pass"
+            android:layout_width="240dp"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@+id/iv_set_pass"
+            android:background="@drawable/edit_white_shape_borner"
+            android:hint="@string/set_new_pass"
+            android:inputType="text"
+            android:paddingLeft="20px"
+            android:paddingRight="20px"
+            android:focusable="true"
+            android:textColor="@color/wifi_color"
+            android:textColorHint="@color/gray_color"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/iv_set_pass"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:background="@drawable/gold_left"
+            android:padding="10px"
+            android:scaleType="fitCenter"
+            android:src="@drawable/iv_locker" />
+        <ImageView
+            android:id="@+id/iv_set_pass_eye"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-50dp"
+            android:layout_marginRight="10px"
+            android:scaleType="centerInside"
+            android:layout_marginTop="12dp"
+            android:onClick="onClickSetEye"
+            android:layout_alignEnd="@+id/et_set_pass"
+            android:layout_toEndOf="@+id/et_set_pass"
+            android:src="@drawable/selector_eye_wifi" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_notice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_set_pass"
+        android:layout_marginLeft="60px"
+        android:layout_marginRight="60px"
+        android:layout_marginTop="10dp"
+        android:layout_centerInParent="true"
+        android:text="@string/notice"
+        android:textSize="16sp"
+        android:textColor="@color/gray_color" />
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="237dp"
+        android:layout_height="38dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/btn_color"
+        android:text="@string/next"
+        android:textColor="@color/color_white"
+        android:textSize="16sp" />
+
+</RelativeLayout>

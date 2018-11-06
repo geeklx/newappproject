@@ -1,0 +1,90 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="BaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/view_line_color</item>
+        <item name="colorPrimaryDark">@color/view_line_color</item>
+        <item name="colorAccent">@color/view_line_color</item>
+
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+
+        <item name="android:windowNoTitle">true</item>
+        <!--<item name="android:windowFullscreen">true</item>-->
+        <item name="android:windowIsTranslucent">true</item>
+        <!--<item name="android:windowDisablePreview">true</item>-->
+        <!--<item name="android:windowBackground">@color/transparent</item>-->
+        <!--<item name="android:windowContentOverlay">@null</item>-->
+    </style>
+
+    <style name="ThemeSplash" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:background">@drawable/starter</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+
+    <style name="settings_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:drawablePadding">@drawable/on_touch_bg</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:clickable">true</item>
+        <item name="android:drawableRight">@drawable/icon_arrow</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+
+    <style name="AppThemeCtrol" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+        <item name="android:navigationBarColor" tools:targetApi="lollipop">@color/navigationBarColor</item>
+        <item name="android:windowBackground">@android:color/white</item>
+    </style>
+
+    <!-- 适用于开启滑动返回功能的Activity -->
+    <style name="AppTheme.Transparent">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <!-- 适用于欢迎界面避免第一次进来白屏或黑屏 -->
+    <style name="AppTheme.Transparent.Splash">
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+
+    <style name="MatchWrapTv" parent="MatchWrap">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/selector_btn_orange</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:onClick">onClick</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+    <style name="AutoWrapTv" parent="AutoWrap">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/selector_btn_orange</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:onClick">onClick</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:paddingRight">4dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+    </style>
+
+    <style name="tab_text_size">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+</resources>

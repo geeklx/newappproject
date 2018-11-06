@@ -1,0 +1,10 @@
+apply plugin: 'org.greenrobot.greendao'//GreenDao
+
+greendao {
+    //数据库的schema版本，也可以理解为数据库版本号
+    schemaVersion 1
+    //设置DaoMaster、DaoSession、Dao包名，也就是要放置这些类的包的全路径。
+    daoPackage 'com.haier.jiuzhidao.jiuzhidaophone_address.dao'
+    //设置DaoMaster、DaoSession、Dao目录
+    targetGenDir 'src/main/java'
+}
